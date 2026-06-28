@@ -1,0 +1,1353 @@
+{
+  "version": 1,
+  "generated": "2026-06-28",
+  "count": 36,
+  "categories": [
+    "Benen & opstaan",
+    "Balans",
+    "Heupen & onderrug",
+    "Schouders & armen",
+    "Core/stabiliteit",
+    "Dagelijkse kracht",
+    "Mobiliteit"
+  ],
+  "exercises": [
+    {
+      "id": "kuiten-heffen",
+      "name": "Op je tenen staan (kuiten heffen)",
+      "category": "Benen & opstaan",
+      "short_explanation": "Je komt rustig op je tenen omhoog en zakt weer langzaam terug.",
+      "why_useful": "Sterke kuiten helpen je stabiel te lopen, af te zetten bij elke stap en makkelijker hoog te reiken. Ook geeft het je meer vertrouwen op oneffen ondergrond.",
+      "target_muscles": [
+        "kuiten (kuitspieren)",
+        "enkels"
+      ],
+      "adl": "Stevig doorlopen, hoog in een kast reiken en je evenwicht houden op de stoeprand.",
+      "steps": [
+        "Ga rechtop staan achter een stevige stoel of bij het aanrecht en houd je licht vast.",
+        "Sta met je voeten op heupbreedte, gewicht gelijk over beide voeten.",
+        "Kom rustig op je tenen omhoog terwijl je uitademt.",
+        "Houd het bovenin 1 tel vast en voel je kuiten aanspannen.",
+        "Zak langzaam en gecontroleerd terug tot je hielen de grond raken."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 tot 10 keer, met beide handen lichte steun.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 15 keer, met lichte aanraking als steun.",
+        "sterker_worden": "2 tot 3 sets van 12 tot 15 keer; maak de omhoog-fase iets vlotter (power) of werk toe naar 1 been met steun. Stop een set zodra een nog goede herhaling lastig wordt."
+      },
+      "safety_tip": "Houd een stoel of het aanrecht binnen handbereik voor je balans en kom rustig omhoog zonder te wippen. Adem uit terwijl je omhoog komt.",
+      "easier": "Kom maar een klein stukje omhoog en houd je stevig met beide handen vast.",
+      "harder": "Doe de oefening op 1 been met lichte steun, of kom iets vlotter omhoog en zak heel langzaam terug.",
+      "cautions": "Extra voorzichtig bij valangst of duizeligheid: houd altijd steun binnen bereik. Geen springen. Stop bij pijn in enkel of achillespees, en bij pijn op de borst, duizeligheid of kortademigheid: stop en overleg met je arts.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel, aanrecht of muur binnen handbereik",
+      "equipment": "Stevige stoel of aanrecht",
+      "media_placeholder": "Rustige video van iemand 60+ die bij het aanrecht op de tenen omhoog komt en langzaam terugzakt, handen licht op het aanrecht als steun."
+    },
+    {
+      "id": "sit-to-stand-met-pauze",
+      "name": "Opstaan met pauze halverwege",
+      "category": "Benen & opstaan",
+      "short_explanation": "Je staat half op uit de stoel, houdt even stil, en gaat dan verder of weer terug.",
+      "why_useful": "Even stilhouden halverwege traint je benen extra en leert je beheerst bewegen. Dat helpt je stabiel op te staan, ook als je het rustig aan moet doen.",
+      "target_muscles": [
+        "bovenbenen (quadriceps)",
+        "bilspieren",
+        "achterkant bovenbeen (hamstrings)"
+      ],
+      "adl": "Beheerst opstaan en even pauzeren, bijvoorbeeld als je opstaat en eerst je evenwicht zoekt.",
+      "steps": [
+        "Ga op de voorste helft van een stevige stoel zitten, voeten op heupbreedte.",
+        "Buig licht voorover vanuit je heupen met een lange, rechte rug en kom half omhoog tot je net van de stoel los bent.",
+        "Houd deze halve stand 2 tot 3 tellen vast en adem rustig door; houd je adem niet in.",
+        "Kom dan helemaal omhoog terwijl je uitademt, of zak juist gecontroleerd terug.",
+        "Ga rustig weer zitten en herhaal."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 5 tot 6 keer, pauze van 2 tellen, met handen als steun op de bovenbenen of leuning.",
+        "actief_blijven": "1 tot 2 sets van 6 tot 10 keer, pauze van 2 tot 3 tellen, zonder steun.",
+        "sterker_worden": "2 tot 3 sets van 8 tot 12 keer, pauze van 3 tellen, armen over elkaar. Stop een set zodra een nog goede herhaling lastig wordt."
+      },
+      "safety_tip": "Houd je adem niet in tijdens de pauze; blijf rustig doorademen. Zet een steun binnen handbereik als je begint te trillen.",
+      "easier": "Houd je vast aan de stoelleuning of het aanrecht en maak de pauze korter (1 tel).",
+      "harder": "Verleng de pauze tot 4 tellen of doe de oefening met je armen over elkaar.",
+      "cautions": "Buig vanuit de heupen met een lange, rechte rug, niet bol naar voren; let hierop bij osteoporose en draai je romp niet tijdens het opstaan. Stop bij scherpe knie- of rugpijn, en bij pijn op de borst, duizeligheid of kortademigheid: stop en overleg met je arts.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel, eventueel leuning of aanrecht binnen handbereik",
+      "equipment": "Stevige stoel",
+      "media_placeholder": "Illustratie of video van iemand 60+ die halverwege het opstaan even stilhoudt in een halve stand met rechte rug, rustige uitdrukking, steun zichtbaar binnen handbereik."
+    },
+    {
+      "id": "opstaan-uit-stoel",
+      "name": "Opstaan uit de stoel",
+      "category": "Benen & opstaan",
+      "short_explanation": "Je staat op vanaf een stevige stoel en gaat weer zitten, rustig en gecontroleerd.",
+      "why_useful": "Dit is precies de beweging die je de hele dag maakt: opstaan van de bank, de wc of een stoel. Hoe makkelijker dit gaat, hoe zelfstandiger en zekerder je je voelt.",
+      "target_muscles": [
+        "bovenbenen (quadriceps)",
+        "bilspieren",
+        "achterkant bovenbeen (hamstrings)"
+      ],
+      "adl": "Opstaan uit een stoel, van de bank, van het toilet of uit de auto.",
+      "steps": [
+        "Ga op de voorste helft van een stevige stoel zitten, voeten op heupbreedte, hielen iets achter je knieen.",
+        "Buig licht voorover vanuit je heupen met een lange, rechte rug, zodat je neus boven je tenen komt.",
+        "Duw je voeten in de grond en sta rustig op terwijl je uitademt.",
+        "Sta even rechtop met je gewicht goed over je voeten verdeeld.",
+        "Zak rustig en gecontroleerd weer terug op de stoel."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 5 tot 8 keer, met je handen op de armleuningen of op je bovenbenen als steun.",
+        "actief_blijven": "1 tot 2 sets van 8 tot 12 keer, armen losjes voor je of over elkaar.",
+        "sterker_worden": "2 tot 3 sets van 10 tot 15 keer, armen over elkaar; maak de omhoog-fase iets vlotter. Stop een set zodra een nog goede herhaling lastig wordt."
+      },
+      "safety_tip": "Adem uit terwijl je omhoog komt; houd je adem niet in. Zet een stoel of de muur binnen handbereik als je je onzeker voelt.",
+      "easier": "Gebruik een hogere stoel of leg een stevig kussen op de zitting, en duw mee met je handen.",
+      "harder": "Doe het zonder steun met je armen over elkaar, of kom iets sneller omhoog (vlotte opstaan-fase, rustig zakken).",
+      "cautions": "Buig vanuit je heupen met een lange, rechte rug, niet diep met een bolle rug; dat is ook prettiger bij osteoporose. Forceer de voorwaartse buiging niet en draai je romp niet tijdens het opstaan. Stop bij scherpe knie- of rugpijn, en bij pijn op de borst, duizeligheid of kortademigheid: stop en overleg met je arts.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel; met armleuningen of met de muur erachter geeft extra zekerheid",
+      "equipment": "Stevige stoel",
+      "media_placeholder": "Rustige illustratie of korte video van iemand 60+ die opstaat van een stevige stoel met armleuningen, lichte voorwaartse buiging vanuit de heupen met rechte rug, voeten goed onder de knieen."
+    },
+    {
+      "id": "step-up-traptrede",
+      "name": "Opstapje op de traptrede",
+      "category": "Benen & opstaan",
+      "short_explanation": "Je stapt met een voet op een lage trede of opstapje en weer terug.",
+      "why_useful": "Dit is precies wat je doet op de trap of bij een stoeprand. Sterkere benen maken traplopen makkelijker en zekerder, zodat je je vaster voelt op je benen.",
+      "target_muscles": [
+        "bovenbenen (quadriceps)",
+        "bilspieren",
+        "kuiten"
+      ],
+      "adl": "De trap op lopen, op een stoeprand of opstapje stappen, in de bus of trein stappen.",
+      "steps": [
+        "Ga voor een lage trede of een stevig opstapje staan en houd de trapleuning of muur vast.",
+        "Zet je hele rechtervoet op de trede.",
+        "Duw je rechtervoet in de trede en stap rustig omhoog terwijl je uitademt.",
+        "Stap met dezelfde voet weer gecontroleerd naar beneden.",
+        "Doe een aantal keer met rechts, dan met links."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 5 tot 8 keer per been op een lage trede, vasthoudend aan de leuning.",
+        "actief_blijven": "1 tot 2 sets van 8 tot 12 keer per been, lichte aanraking aan de leuning.",
+        "sterker_worden": "2 tot 3 sets van 10 tot 12 keer per been; stap iets vlotter omhoog (power), rustig terug. Stop een set zodra een nog goede herhaling lastig wordt."
+      },
+      "safety_tip": "Houd de trapleuning of muur binnen handbereik en zet altijd je hele voet plat op de trede. Kijk vooruit, niet naar je voeten. Adem uit terwijl je omhoog stapt.",
+      "easier": "Gebruik een lagere trede en houd je stevig vast met beide handen.",
+      "harder": "Gebruik een iets hogere trede, laat de leuning losjes los, of maak de omhoog-stap wat vlotter.",
+      "cautions": "Extra voorzichtig bij valangst of duizeligheid: houd altijd steun binnen bereik. Geen springen of impact. Stop bij scherpe kniepijn, en bij pijn op de borst, duizeligheid of kortademigheid: stop en overleg met je arts.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Trapleuning of muur binnen handbereik",
+      "equipment": "Onderste traptrede of een stevig laag opstapje",
+      "media_placeholder": "Rustige video van iemand 60+ die met de hele voet op een lage traptrede stapt, een hand aan de leuning, blik vooruit, beheerste beweging omhoog en omlaag."
+    },
+    {
+      "id": "gecontroleerd-zakken-uit-stand",
+      "name": "Rustig zakken naar zit",
+      "category": "Benen & opstaan",
+      "short_explanation": "Je laat je vanuit stand heel langzaam en gecontroleerd in de stoel zakken.",
+      "why_useful": "Langzaam zakken traint je benen om je gewicht op te vangen. Zo plof je niet meer neer op de stoel of de wc, maar houd je de controle.",
+      "target_muscles": [
+        "bovenbenen (quadriceps)",
+        "bilspieren"
+      ],
+      "adl": "Rustig gaan zitten op een stoel, de bank of het toilet zonder je te laten vallen.",
+      "steps": [
+        "Sta met je rug naar een stevige stoel, voeten op heupbreedte, hakken net voor de zitting.",
+        "Houd je met een hand vast aan de leuning of het aanrecht als je je onzeker voelt; voel je je stabiel, dan strek je je armen losjes voor je uit voor balans.",
+        "Zak heel langzaam, tel rustig tot drie of vier, terwijl je je heupen naar achteren stuurt en je rug lang en recht houdt.",
+        "Raak de zitting zacht aan, alsof je een eitje niet wilt breken.",
+        "Sta op de manier die voor jou prettig is weer op en herhaal."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 5 tot 8 keer, zak in 2 tot 3 tellen met een hand op de stoelleuning.",
+        "actief_blijven": "1 tot 2 sets van 8 tot 12 keer, zak in 3 tellen zonder steun.",
+        "sterker_worden": "2 tot 3 sets van 8 tot 12 keer, zak heel langzaam in 4 tot 5 tellen. Stop een set zodra je het zakken niet meer rustig onder controle hebt."
+      },
+      "safety_tip": "Houd de stoel altijd vlak achter je, zodat je nooit te ver of mis zakt. Adem rustig door tijdens het zakken en houd je adem niet in.",
+      "easier": "Gebruik een hogere stoel en houd je met een hand vast aan de leuning of het aanrecht.",
+      "harder": "Zak nog langzamer (5 tellen) of gebruik een iets lagere zitting, steeds met de stoel binnen bereik.",
+      "cautions": "Stuur je heupen naar achteren met een lange, rechte rug in plaats van je rug bol te buigen; dat is ook prettig bij osteoporose. Extra voorzichtig bij valangst of duizeligheid: houd dan steun binnen handbereik. Stop bij scherpe pijn in knie of rug, en bij pijn op de borst, duizeligheid of kortademigheid: stop en overleg met je arts.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel direct achter je; leuning of aanrecht binnen handbereik voor steun",
+      "equipment": "Stevige stoel",
+      "media_placeholder": "Rustige video van iemand 60+ die vanuit stand heel langzaam in een stevige stoel zakt, heupen naar achteren met rechte rug, stoel duidelijk vlak achter de hielen, een hand bij de leuning als steun."
+    },
+    {
+      "id": "zittend-knie-strekken",
+      "name": "Zittend je knie strekken",
+      "category": "Benen & opstaan",
+      "short_explanation": "Je zit op een stoel en strekt om de beurt je knie tot je been recht voor je staat.",
+      "why_useful": "Dit versterkt de spier aan de voorkant van je bovenbeen, die je nodig hebt om op te staan en de trap op te lopen. Het kan veilig zittend, ook als staan even lastig is.",
+      "target_muscles": [
+        "bovenbenen (quadriceps)"
+      ],
+      "adl": "Kracht voor opstaan, traplopen en stevig doorstappen tijdens het wandelen.",
+      "steps": [
+        "Ga rechtop op een stevige stoel zitten, voeten plat op de grond.",
+        "Houd je handen losjes op de zitting of op je bovenbenen.",
+        "Strek langzaam je rechterknie tot je been recht voor je staat, terwijl je uitademt.",
+        "Houd het been 1 tot 2 tellen recht en zak dan rustig terug.",
+        "Wissel van been of doe eerst alle herhalingen rechts, dan links."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 tot 10 keer per been, rustig tempo.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 15 keer per been, met 1 tel vasthouden bovenin.",
+        "sterker_worden": "2 tot 3 sets van 12 tot 15 keer per been; houd 2 tellen vast of leg een lichte boodschappentas over je enkel. Stop een set zodra een nog goede herhaling lastig wordt."
+      },
+      "safety_tip": "Strek je knie rustig en forceer hem niet helemaal op slot. Adem uit tijdens het strekken en houd je adem niet in.",
+      "easier": "Strek je been maar half en doe minder herhalingen.",
+      "harder": "Houd je been langer recht of hang een lichte gevulde boodschappentas over je enkel als weerstand.",
+      "cautions": "Stop bij scherpe of stekende kniepijn; een licht vermoeid gevoel in de spier is normaal. Bij pijn op de borst, duizeligheid of kortademigheid: stop en overleg met je arts.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel om op te zitten",
+      "equipment": "Stevige stoel, eventueel een lichte boodschappentas",
+      "media_placeholder": "Illustratie of video van iemand 60+ die rechtop op een stoel zit en rustig een been recht voor zich uit strekt, optioneel een lichte tas over de enkel."
+    },
+    {
+      "id": "balans-met-stoelsteun-staan",
+      "name": "Balans met stoelsteun (staan)",
+      "category": "Balans",
+      "short_explanation": "Je staat rechtop naast een stevige stoel en oefent je evenwicht door je voeten dichter bij elkaar te zetten.",
+      "why_useful": "Deze oefening helpt je stabieler te staan en geeft je vertrouwen op je benen, zodat dagelijkse dingen als stilstaan in de keuken of in de rij makkelijker gaan.",
+      "target_muscles": [
+        "enkels",
+        "kuiten",
+        "heupspieren",
+        "rompspieren"
+      ],
+      "adl": "Stevig blijven staan terwijl je een kastje opent, bij het aanrecht werkt of in de rij wacht.",
+      "steps": [
+        "Ga rechtop staan naast een stevige stoel of het aanrecht en houd het met een hand losjes vast.",
+        "Zet je voeten op heupbreedte uit elkaar en kijk recht vooruit.",
+        "Span je buik licht aan, adem rustig door en sta zo 20 tot 30 seconden stil.",
+        "Zet daarna je voeten dichter bij elkaar voor iets meer uitdaging.",
+        "Blijf vooruit kijken en houd de steun steeds binnen handbereik."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set: 2 keer 20 seconden stilstaan met je voeten op heupbreedte, een hand aan de stoel of het aanrecht.",
+        "actief_blijven": "1 tot 2 sets: 2 keer 30 seconden, voeten dichter bij elkaar, eventueel maar 1 of 2 vingers aan de steun.",
+        "sterker_worden": "2 tot 3 sets: 30 tot 40 seconden met je voeten bijna tegen elkaar, steun los maar binnen handbereik; draai eventueel rustig je hoofd even naar links en rechts, ogen open."
+      },
+      "safety_tip": "Houd de stoel of het aanrecht altijd binnen handbereik en pak hem meteen vast als je wankelt. Stop bij een licht gevoel in het hoofd.",
+      "easier": "Zet je voeten verder uit elkaar en houd de steun met twee handen vast.",
+      "harder": "Zet je voeten tegen elkaar, laat de steun los (maar dichtbij) en draai rustig je hoofd naar links en rechts; houd je ogen daarbij open.",
+      "cautions": "Bij valangst of duizeligheid blijf je goed vasthouden en start je extra rustig. Stop bij een licht gevoel in het hoofd of als je je onzeker voelt. Geen bijzondere belasting voor de rug.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel of aanrecht",
+      "equipment": "Stevige stoel",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop naast een aanrecht staat, een hand licht op de rand, voeten bij elkaar, kalme houding, steun duidelijk binnen handbereik."
+    },
+    {
+      "id": "eenbeenstand-met-steun",
+      "name": "Eenbeenstand met steun",
+      "category": "Balans",
+      "short_explanation": "Je staat even op een been terwijl je je vasthoudt, om je evenwicht op een been te trainen.",
+      "why_useful": "Deze oefening helpt je beter op een been te staan, wat je nodig hebt bij traplopen, een broek aantrekken of over iets heen stappen.",
+      "target_muscles": [
+        "enkels",
+        "kuiten",
+        "heupspieren",
+        "bilspieren",
+        "rompspieren"
+      ],
+      "adl": "Een broek of sok aantrekken in stand, een stap op de trap nemen of over een drempel stappen.",
+      "steps": [
+        "Ga rechtop naast het aanrecht of een stevige stoel staan en houd het vast.",
+        "Verplaats rustig je gewicht naar je ene been.",
+        "Til je andere voet een klein stukje van de vloer.",
+        "Blijf zo even staan, rechtop en met je blik vooruit.",
+        "Zet je voet weer neer en wissel naar je andere been."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set: 2 keer 5 tot 10 seconden per been, met een hand stevig aan de steun.",
+        "actief_blijven": "1 tot 2 sets: 2 keer 10 tot 15 seconden per been, vingertoppen licht aan de steun.",
+        "sterker_worden": "2 tot 3 sets: 15 tot 20 seconden per been, steun los maar binnen handbereik; draai eventueel rustig je hoofd, ogen open."
+      },
+      "safety_tip": "Houd de steun stevig binnen handbereik en pak hem meteen vast zodra je wiebelt; til je voet niet hoger dan nodig.",
+      "easier": "Til je voet maar een paar centimeter op of laat je tenen de vloer raken, en houd de steun met twee handen vast.",
+      "harder": "Houd langer vol, laat de steun los (maar dichtbij) en draai rustig je hoofd naar links en rechts; houd je ogen daarbij open.",
+      "cautions": "Bij valangst, duizeligheid of een hoog valgevoel blijf je altijd goed steunen en begin je kort. Doe dit op een stroeve, vrije vloer. Geen bijzondere belasting voor de rug.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Aanrecht of stevige stoel binnen handbereik",
+      "equipment": "Stevige stoel of aanrecht",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die op een been staat naast een aanrecht, een hand op de rand, andere voet net van de vloer, rechtop en rustig, steun duidelijk binnen handbereik."
+    },
+    {
+      "id": "hak-teen-lopen-tandem",
+      "name": "Hak-teen lopen (tandem)",
+      "category": "Balans",
+      "short_explanation": "Je loopt langzaam op een denkbeeldige lijn en zet steeds je hak vlak voor de tenen van je andere voet.",
+      "why_useful": "Deze oefening traint je evenwicht bij het lopen, zodat je zekerder voelt op een smal pad, in een gangetje of bij het draaien thuis.",
+      "target_muscles": [
+        "enkels",
+        "kuiten",
+        "heupspieren",
+        "rompspieren"
+      ],
+      "adl": "Zeker lopen door een smalle gang, langs het aanrecht of het keren in een kleine ruimte.",
+      "steps": [
+        "Ga naast het aanrecht of een lange muur staan, zodat je steeds kunt steunen.",
+        "Zet je ene voet recht voor de andere, met je hak vlak tegen de tenen van je achterste voet.",
+        "Verplaats rustig je gewicht naar voren en zet de andere voet er weer vlak voor.",
+        "Kijk een paar passen vooruit in plaats van naar je voeten.",
+        "Loop zo 8 tot 10 stappen, draai rustig en met kleine pasjes om vlak bij je steun en loop terug."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 tot 10 stappen heen en terug, met een hand glijdend langs het aanrecht of de muur als steun.",
+        "actief_blijven": "1 tot 2 sets van 10 stappen, vingertoppen lichtjes langs de steun, blik vooruit.",
+        "sterker_worden": "2 tot 3 sets van 10 tot 12 stappen met de steun los maar steeds vlak langs het aanrecht, armen losjes naast je lichaam zodat je je meteen kunt vastpakken."
+      },
+      "safety_tip": "Loop altijd vlak langs een aanrecht of muur zodat je je in een keer kunt vastpakken; ga rustig en draai voorzichtig met kleine pasjes bij het omkeren.",
+      "easier": "Laat een kleine ruimte tussen je voeten (geen hak tegen teen) en houd het aanrecht stevig vast.",
+      "harder": "Zet je hak strak tegen de tenen, laat de steun los maar blijf er vlak langs lopen, met je armen losjes naast je zodat je je meteen kunt vastgrijpen.",
+      "cautions": "Bij valangst, duizeligheid of een onzeker gevoel houd je altijd steun vast. Wees extra voorzichtig bij het omdraaien en doe dat met kleine pasjes vlak bij je steun. Doe dit op een stroeve vloer zonder losse kleedjes. Geen bijzondere belasting voor de rug.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Aanrecht of lange muur binnen handbereik",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die langzaam hak-tegen-teen langs een aanrecht loopt, een hand er vlak boven zwevend, blik rustig vooruit, stroeve vloer zonder kleedjes."
+    },
+    {
+      "id": "marcheren-op-de-plek",
+      "name": "Marcheren op de plek",
+      "category": "Balans",
+      "short_explanation": "Je marcheert rustig op je plek en tilt om de beurt je knieen op, terwijl je je evenwicht houdt.",
+      "why_useful": "Deze oefening traint het kort op een been balanceren bij elke stap, zodat lopen en de eerste stap bij het wegstappen zekerder voelen.",
+      "target_muscles": [
+        "heupbuigers",
+        "bilspieren",
+        "bovenbenen",
+        "rompspieren",
+        "enkels"
+      ],
+      "adl": "De eerste stap zetten vanaf stilstand, over een drempel stappen of zeker doorlopen in huis.",
+      "steps": [
+        "Ga rechtop naast een stevige stoel of het aanrecht staan en houd het losjes vast.",
+        "Til rustig je ene knie op tot een prettige hoogte en zet je voet weer neer.",
+        "Wissel naar je andere knie, alsof je op je plek marcheert.",
+        "Houd een rustig, gelijkmatig tempo aan en blijf rechtop.",
+        "Adem rustig door en kijk vooruit."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set: 10 keer (5 per been) op lage knie, met een hand aan de steun.",
+        "actief_blijven": "1 tot 2 sets: 16 tot 20 keer (8 tot 10 per been), knieen iets hoger, vingertoppen licht aan de steun.",
+        "sterker_worden": "2 tot 3 sets: 20 tot 24 keer met hogere knieen en een iets vlotter tempo, steun los maar binnen handbereik."
+      },
+      "safety_tip": "Til je knieen niet hoger dan prettig voelt en houd de steun dichtbij voor het geval je wankelt.",
+      "easier": "Til je knieen maar een klein stukje op en houd de steun met twee handen vast.",
+      "harder": "Til je knieen hoger, ga iets vlotter en laat de steun los (maar dichtbij); houd elke knie heel even boven.",
+      "cautions": "Bij valangst of duizeligheid blijf je steunen. Til je knie niet hoger dan comfortabel als je heupklachten hebt. Geen bijzondere belasting voor de rug.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel of aanrecht",
+      "equipment": "Stevige stoel",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die op de plek marcheert naast een stoel, een hand op de rugleuning, een knie rustig opgetild, rechtop en kalm."
+    },
+    {
+      "id": "zijwaarts-stappen",
+      "name": "Zijwaarts stappen",
+      "category": "Balans",
+      "short_explanation": "Je stapt rustig opzij langs het aanrecht en weer terug, om je evenwicht in de breedte te trainen.",
+      "why_useful": "Deze oefening helpt je zijwaarts te bewegen zonder te wankelen, zodat je makkelijker langs de bank schuift, opzij stapt voor iemand of in de keuken beweegt.",
+      "target_muscles": [
+        "heupspieren",
+        "bilspieren",
+        "binnenkant bovenbenen",
+        "enkels"
+      ],
+      "adl": "Opzij stappen om iemand te laten passeren, langs het aanrecht schuiven of uit de weg gaan voor de hond.",
+      "steps": [
+        "Ga rechtop naast het aanrecht staan en houd het met een hand vast.",
+        "Stap met je ene voet een gewone pas opzij.",
+        "Zet je andere voet er rustig bij, zodat je weer stevig staat.",
+        "Maak zo een paar passen de ene kant op en daarna weer terug.",
+        "Blijf rechtop, kijk vooruit en adem rustig door."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set: 6 tot 8 stappen naar elke kant, met een hand aan het aanrecht.",
+        "actief_blijven": "1 tot 2 sets: 8 tot 10 stappen per kant, vingertoppen licht aan de steun.",
+        "sterker_worden": "2 tot 3 sets: 10 tot 12 stappen per kant, steun los maar dichtbij; zet eventueel iets grotere passen."
+      },
+      "safety_tip": "Houd het aanrecht binnen handbereik en kijk vooruit in plaats van naar je voeten, zodat je niet je evenwicht verliest.",
+      "easier": "Maak kleine stapjes en houd het aanrecht met twee handen vast.",
+      "harder": "Maak grotere passen, laat de steun los (maar dichtbij) of zak heel licht door je knieen tijdens het stappen; houd je rug daarbij rechtop.",
+      "cautions": "Bij valangst of een onzeker gevoel blijf je goed steunen. Doe dit op een stroeve, vrije vloer. Geen bijzondere belasting voor de rug.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Aanrecht of lange muur binnen handbereik",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die zijwaarts langs een aanrecht stapt, een hand op de rand, rechtop, blik vooruit, vrije en stroeve vloer."
+    },
+    {
+      "id": "bekkenkanteling",
+      "name": "Bekkenkanteling",
+      "category": "Heupen & onderrug",
+      "short_explanation": "Je kantelt je bekken zachtjes heen en weer, waardoor je onderrug afwisselend wat holler en wat boller wordt.",
+      "why_useful": "Je maakt je onderrug en heupen los en leert je bekken bewust bewegen. Dat helpt je rug soepel te houden en makkelijker te bewegen na lang zitten of liggen.",
+      "target_muscles": [
+        "buikspieren (onderbuik)",
+        "rugstrekkers (onderrug)",
+        "bilspieren"
+      ],
+      "adl": "Je rug losmaken voor het opstaan uit bed of na lang zitten.",
+      "steps": [
+        "Ga op je rug liggen met je knieën gebogen en je voeten plat op de grond, of ga rechtop zitten op een stevige stoel.",
+        "Adem rustig uit en kantel je bekken zachtjes zodat je onderrug iets platter tegen de ondergrond of stoel komt.",
+        "Adem in en kantel je bekken rustig de andere kant op, zodat je onderrug iets holler wordt.",
+        "Beweeg klein, soepel en zonder kracht te zetten.",
+        "Wissel rustig heen en weer in een prettig ritme."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 6 tot 8 rustige kantelingen heen en weer.",
+        "actief_blijven": "1 tot 2 sets van 8 tot 10 kantelingen.",
+        "sterker_worden": "2 sets van 10 tot 12 kantelingen, eventueel iets langzamer met een korte pauze op het einde."
+      },
+      "safety_tip": "Beweeg klein en pijnvrij; dit is losmaken, geen krachtoefening, dus forceer niets en houd nooit je adem in.",
+      "easier": "Doe de oefening zittend op een stoel en maak de beweging heel klein.",
+      "harder": "Maak de beweging op de grond iets groter en voeg op het kantelmoment een lichte bilspanning toe.",
+      "cautions": "Bij osteoporose: houd de beweging klein en soepel, zonder krachtige rompbuiging of draaiing. Stap je via de zij liggend op de grond en weer omhoog om voorovergebogen rompbuiging te vermijden. Stop bij pijn of uitstralende klachten.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen (stoel of matje naar wens)",
+      "equipment": "Geen; eventueel een matje voor comfort",
+      "media_placeholder": "Rustige illustratie van iemand op de rug met gebogen knieën die het bekken zacht heen en weer kantelt, met een subtiele pijl die de beweging toont."
+    },
+    {
+      "id": "bilspanning-glute-squeeze",
+      "name": "Bilspanning (glute squeeze)",
+      "category": "Heupen & onderrug",
+      "short_explanation": "Je knijpt je bilspieren een paar tellen stevig samen en laat ze daarna weer los.",
+      "why_useful": "Je activeert en versterkt je bilspieren zonder je rug te belasten. Sterke billen helpen je makkelijker opstaan, rechtop staan en stabieler lopen.",
+      "target_muscles": [
+        "bilspieren"
+      ],
+      "adl": "Stabieler staan bij het aanrecht en makkelijker opstaan uit een stoel.",
+      "steps": [
+        "Ga rechtop staan of zitten met je voeten plat op de grond.",
+        "Knijp je bilspieren stevig samen, alsof je een muntje tussen je billen vasthoudt.",
+        "Houd de spanning 3 tot 5 tellen vast en blijf rustig doorademen.",
+        "Laat je billen daarna helemaal ontspannen.",
+        "Herhaal rustig en gecontroleerd."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 keer knijpen, telkens 3 tellen vasthouden.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 12 keer, telkens 4 tot 5 tellen vasthouden.",
+        "sterker_worden": "2 tot 3 sets van 12 tot 15 keer, telkens 5 tellen stevig vasthouden."
+      },
+      "safety_tip": "Blijf gewoon doorademen tijdens het knijpen; houd nooit je adem in.",
+      "easier": "Doe de oefening zittend en houd de spanning korter vast.",
+      "harder": "Doe het staand en til na het knijpen rustig één hiel iets van de grond, met een aanrecht of stoel binnen handbereik voor je balans.",
+      "cautions": "Meestal goed verdragen. Stop bij pijn in je heup of onderrug. Doe je dit staand op één been, houd dan steun binnen handbereik.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen (eventueel een stoel om op te zitten; aanrecht binnen handbereik bij de staande variant op één been)",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van iemand die rechtop staat of zit en de bilspieren aanspant, met een klein animatie-accent op de bilstreek."
+    },
+    {
+      "id": "heupscharnier-hip-hinge",
+      "name": "Heupscharnier (hip hinge)",
+      "category": "Heupen & onderrug",
+      "short_explanation": "Je buigt vanuit je heupen naar voren met een rechte rug, alsof je een deur dichtduwt met je billen.",
+      "why_useful": "Met deze beweging leer je vanuit je heupen voorover te komen in plaats van vanuit je rug te buigen. Dat helpt je makkelijker en met minder belasting op je rug om boodschappen, een wasmand of iets van de grond te pakken.",
+      "target_muscles": [
+        "bilspieren",
+        "hamstrings (achterkant bovenbeen)",
+        "rugstrekkers (onderrug)"
+      ],
+      "adl": "Boodschappen of een wasmand van een lage tafel of de grond pakken met je rug recht.",
+      "steps": [
+        "Ga staan met je voeten op heupbreedte, knieën heel licht ontspannen.",
+        "Leg je handen op de bovenkant van je heupen.",
+        "Duw je billen rustig naar achteren en buig vanuit je heupen naar voren, je rug blijft de hele tijd recht.",
+        "Ga zover tot je een lichte rek aan de achterkant van je benen voelt, niet verder.",
+        "Adem uit en kom rustig weer rechtop door je heupen naar voren te duwen en je billen te spannen."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 herhalingen, rustig en met een kleine beweging; houd een hand op een aanrecht of stoelleuning.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 12 herhalingen, met je rug recht.",
+        "sterker_worden": "2 tot 3 sets van 10 tot 12 herhalingen; eventueel met een lichte boodschappentas in beide handen vlak voor je benen, alleen als je rug recht en pijnvrij blijft. Stop een set zodra een nette herhaling lastig wordt; ga nooit door tot je niet meer kunt."
+      },
+      "safety_tip": "Houd je rug de hele beweging recht (niet rond maken) en adem uit als je omhoogkomt; houd nooit je adem in.",
+      "easier": "Maak de beweging kleiner en houd je hand op het aanrecht of een stevige stoel voor steun.",
+      "harder": "Houd een lichte boodschappentas of waterfles met beide handen vast en kom iets vlotter, maar beheerst, omhoog. Doe dit alleen met je rug recht.",
+      "cautions": "Bij osteoporose: doe deze oefening alleen zonder extra gewicht en blijf binnen een kleine, comfortabele hoek met je rug recht; vermijd voorovergebogen tillen van gewicht en het ronden of draaien van je rug. Stop bij scherpe rug- of beenpijn of bij uitstralende pijn of tintelingen in je benen.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel of aanrecht (bij Rustig starten of bij twijfel over je balans)",
+      "equipment": "Geen; eventueel een lichte boodschappentas (niet bij osteoporose)",
+      "media_placeholder": "Rustige zijaanzicht-illustratie van iemand die vanuit de heupen voorover scharniert met een rechte rug, een hand binnen handbereik van een aanrecht."
+    },
+    {
+      "id": "staande-heup-abductie",
+      "name": "Staande heup-abductie (been zijwaarts)",
+      "category": "Heupen & onderrug",
+      "short_explanation": "Je tilt één gestrekt been rustig opzij en zet het weer terug.",
+      "why_useful": "Je versterkt de spieren aan de zijkant van je heup. Die houden je bekken stabiel als je op één been staat, wat helpt bij stabiel lopen en het verplaatsen van je gewicht.",
+      "target_muscles": [
+        "heupabductoren (zijkant heup)",
+        "bilspieren"
+      ],
+      "adl": "Stabieler lopen en makkelijker een been opzij zetten, bijvoorbeeld om iets te ontwijken.",
+      "steps": [
+        "Ga rechtop staan naast een aanrecht of stevige stoel en houd je vast met één hand.",
+        "Verplaats je gewicht rustig naar één been.",
+        "Til je andere been gestrekt opzij, je tenen wijzen naar voren.",
+        "Til niet hoger dan zo'n 20 tot 30 centimeter en blijf rechtop, niet overhellen.",
+        "Adem uit terwijl je tilt en zet je been daarna rustig en gecontroleerd terug.",
+        "Doe eerst de ene kant, daarna de andere."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 herhalingen per been, met steun van een aanrecht of stoel.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 12 herhalingen per been; houd je licht vast voor je balans.",
+        "sterker_worden": "2 tot 3 sets van 12 tot 15 herhalingen per been; houd je nog maar met een paar vingers vast en til iets langzamer terug, met steun binnen handbereik."
+      },
+      "safety_tip": "Houd je steun binnen handbereik en blijf rechtop staan; til je been niet te hoog en blijf in balans.",
+      "easier": "Maak de beweging kleiner en houd je goed vast met beide handen.",
+      "harder": "Verminder de steun tot een paar vingers en til je been iets langzamer omhoog en omlaag; houd het aanrecht binnen handbereik.",
+      "cautions": "Bij valangst of duizeligheid altijd stevig vasthouden en steun binnen handbereik houden. Til je been recht opzij, niet naar voren of achteren en zonder je rug te draaien. Stop bij pijn in je heup of onderrug.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel of aanrecht (altijd binnen handbereik)",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van iemand die naast een aanrecht staat, één hand aan de rand, en het andere been licht gestrekt opzij tilt."
+    },
+    {
+      "id": "staande-milde-rugextensie",
+      "name": "Staande milde rugextensie",
+      "category": "Heupen & onderrug",
+      "short_explanation": "Je leunt staand een klein stukje achterover met je handen op je onderrug.",
+      "why_useful": "Deze beweging gaat de andere kant op dan het vele voorovergebogen zitten en bukken op een dag. Het helpt je rechter te staan en je rug soepel te bewegen.",
+      "target_muscles": [
+        "rugstrekkers (onderrug)",
+        "bilspieren"
+      ],
+      "adl": "Rechter staan en je makkelijker uitstrekken na lang zitten.",
+      "steps": [
+        "Ga rechtop staan met je voeten op heupbreedte, eventueel met een aanrecht binnen handbereik.",
+        "Leg je beide handen plat op je onderrug, vingers naar beneden.",
+        "Adem uit en leun rustig een klein stukje achterover, alleen zover als comfortabel.",
+        "Houd je knieën licht gebogen en kijk recht vooruit, kantel je hoofd niet ver naar achteren.",
+        "Kom rustig weer rechtop staan.",
+        "Beweeg traag en gecontroleerd, zonder te veren."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 6 tot 8 herhalingen met een heel kleine beweging.",
+        "actief_blijven": "1 tot 2 sets van 8 tot 10 herhalingen.",
+        "sterker_worden": "2 sets van 10 tot 12 herhalingen, of houd boven elke beweging 2 tot 3 tellen vast, binnen je comfortzone."
+      },
+      "safety_tip": "Leun maar een klein stukje achterover, kantel je hoofd niet ver naar achteren en stop bij tintelingen, duizeligheid of pijn die uitstraalt naar je benen.",
+      "easier": "Maak de beweging heel klein, of doe alleen het rechtop trekken vanuit een lichte voorovergebogen houding.",
+      "harder": "Houd de lichte achteroverleun 2 tot 3 tellen vast en maak de beweging iets groter binnen je comfortzone.",
+      "cautions": "Bij osteoporose: alleen een heel milde beweging, geen ver achteroverbuigen. Houd bij duizeligheid of valangst een aanrecht binnen handbereik, omdat je hoofd licht achterover gaat. Stop bij pijn in je rug, uitstralende pijn, tintelingen of duizeligheid.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen (aanrecht binnen handbereik bij twijfel over je balans of bij duizeligheid)",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige zijaanzicht-illustratie van iemand die rechtop staat met handen op de onderrug en heel licht achterover leunt."
+    },
+    {
+      "id": "arm-cirkels",
+      "name": "Armcirkels",
+      "category": "Schouders & armen",
+      "short_explanation": "Je maakt met gestrekte armen rustige cirkels in de lucht.",
+      "why_useful": "Houdt je schoudergewrichten soepel en warmt de schouderspieren op, zodat reiken en aankleden makkelijker en losser gaat.",
+      "target_muscles": [
+        "schouderspieren",
+        "bovenrug",
+        "armspieren"
+      ],
+      "adl": "Een jas aantrekken, een gordel pakken in de auto of iets van een plank reiken.",
+      "steps": [
+        "Ga rechtop staan met je voeten op heupbreedte, schouders ontspannen.",
+        "Strek je armen zijwaarts uit op schouderhoogte, of iets lager als dat prettiger is.",
+        "Maak rustige, kleine cirkels naar voren; houd je schouders laag en ontspannen.",
+        "Doe daarna evenveel rustige cirkels naar achteren.",
+        "Adem rustig door en maak de cirkels groter zolang het comfortabel blijft."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set: 8 kleine cirkels voorwaarts en 8 achterwaarts, armen iets lager.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 12 cirkels elke kant op.",
+        "sterker_worden": "2 tot 3 sets van 12 tot 15 grotere cirkels elke kant op, armen op volle schouderhoogte."
+      },
+      "safety_tip": "Houd de cirkels klein als je schouder gevoelig is en forceer nooit door pijn heen. Stop bij scherpe pijn of duizeligheid.",
+      "easier": "Houd je armen lager (onder schouderhoogte) en maak kleinere cirkels, of doe één arm tegelijk.",
+      "harder": "Maak grotere cirkels en houd je armen langer op schouderhoogte voor meer uithouding.",
+      "cautions": "Geen bijzondere. Voorzichtig bij schouderklachten; blijf binnen een pijnvrije beweging.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die staand met gestrekte armen zijwaarts kleine cirkels maakt, ontspannen schouders, neutrale achtergrond."
+    },
+    {
+      "id": "borst-openen-tegen-muur",
+      "name": "Borst openen tegen de muur",
+      "category": "Schouders & armen",
+      "short_explanation": "Je legt je onderarm tegen de muur en draait je lijf rustig weg om je borst te openen.",
+      "why_useful": "Maakt je borst en voorkant van je schouder losser, zodat je rechterop staat en makkelijker naar achteren en omhoog reikt.",
+      "target_muscles": [
+        "borstspieren",
+        "voorste schouder"
+      ],
+      "adl": "Rechtop staan, achterom reiken naar je gordel of jas, en met opgeheven schouders ontspannen lopen.",
+      "steps": [
+        "Ga met je zij naast een muur staan, voeten op heupbreedte.",
+        "Leg je onderarm en hand plat tegen de muur, elleboog ongeveer op schouderhoogte.",
+        "Stap met je buitenste voet een klein stukje naar voren voor stabiliteit.",
+        "Draai je voeten en je hele bovenlichaam samen rustig weg van de muur tot je een lichte rek voelt in je borst.",
+        "Houd de rek vast, adem rustig door, en kom dan langzaam terug. Wissel daarna van kant."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set: rek per kant 15 seconden vasthouden met een milde rek.",
+        "actief_blijven": "1 tot 2 sets per kant van 20 seconden.",
+        "sterker_worden": "2 sets per kant van 25 tot 30 seconden met een iets diepere, comfortabele rek."
+      },
+      "safety_tip": "Rek rustig tot een prettige spanning, nooit tot pijn. Draai vanuit je hele lijf en niet alleen vanuit je rug; draai niet door als het in je schouder trekt.",
+      "easier": "Draai minder ver weg van de muur en houd de rek korter vast.",
+      "harder": "Draai iets verder weg of houd de rek wat langer vast voor meer souplesse.",
+      "cautions": "Voorzichtig bij schouderklachten. Bij osteoporose: draai je voeten mee en gebruik je hele lijf, vermijd een geforceerde eindstandige rompdraai en blijf binnen een comfortabele, kleine beweging.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige muur",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon zijwaarts bij een muur met onderarm tegen de muur, lijf licht weggedraaid, ontspannen gezicht."
+    },
+    {
+      "id": "deurpost-borststretch",
+      "name": "Borststretch in de deurpost",
+      "category": "Schouders & armen",
+      "short_explanation": "Je zet je onderarmen tegen een deurpost en leunt zachtjes naar voren.",
+      "why_useful": "Rekt je borst en de voorkant van je schouders, zodat je rechterop staat en je armen vrijer kunt heffen en reiken.",
+      "target_muscles": [
+        "borstspieren",
+        "voorste schouders"
+      ],
+      "adl": "Rechtop blijven achter de computer of tijdens lopen, en makkelijker omhoog reiken naar een kast.",
+      "steps": [
+        "Ga in een open deuropening staan, voeten op heupbreedte.",
+        "Zet je onderarmen en handen tegen de deurposten, ellebogen ongeveer op schouderhoogte.",
+        "Stap met één voet rustig een klein stapje door de opening naar voren.",
+        "Leun zachtjes naar voren tot je een milde rek voelt in je borst en schouders.",
+        "Houd rustig vast en adem door; kom daarna langzaam terug naar het midden."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set: 15 seconden vasthouden met een lichte rek.",
+        "actief_blijven": "1 tot 2 sets van 20 seconden.",
+        "sterker_worden": "2 sets van 25 tot 30 seconden met een iets diepere, comfortabele rek."
+      },
+      "safety_tip": "Leun rustig en gecontroleerd; stop zodra je rek omslaat in pijn. Zorg dat je stevig staat en houd je voet voor zodat je stabiel blijft.",
+      "easier": "Leun maar een klein stukje naar voren en houd de rek korter vast.",
+      "harder": "Stap iets verder door de opening en houd de rek wat langer vast.",
+      "cautions": "Voorzichtig bij schouderklachten. Vermijd te ver doorleunen als je schouder gevoelig is; blijf binnen een prettige rek.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Deurpost",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon in een deuropening met onderarmen tegen de deurposten, één voet voor, zacht naar voren leunend."
+    },
+    {
+      "id": "handdoek-row",
+      "name": "Handdoek-trekken (trekbeweging)",
+      "category": "Schouders & armen",
+      "short_explanation": "Je trekt met je armen aan een handdoek terwijl je je schouderbladen naar elkaar knijpt.",
+      "why_useful": "Versterkt je bovenrug en armen voor de trekbeweging, zodat je rechter zit en makkelijker iets naar je toe trekt of een lade opentrekt.",
+      "target_muscles": [
+        "bovenrug",
+        "schouderbladspieren",
+        "biceps (voorkant bovenarm)"
+      ],
+      "adl": "Een lade of zware deur naar je toe trekken, een tas optillen of jezelf optrekken aan een leuning.",
+      "steps": [
+        "Ga rechtop zitten of staan en pak een handdoek met beide handen op schouderbreedte vast.",
+        "Strek je armen naar voren op borsthoogte en trek de handdoek licht strak.",
+        "Adem uit en trek je handen uit elkaar terwijl je je schouderbladen naar elkaar knijpt.",
+        "Houd de spanning 1 tel vast; je voelt het werken tussen je schouderbladen.",
+        "Laat rustig los naar de beginstand en herhaal in een gelijkmatig tempo."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 herhalingen met lichte spanning op de handdoek.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 12 herhalingen met iets meer trekkracht.",
+        "sterker_worden": "2 tot 3 sets van 12 tot 15 herhalingen; trek steviger en knijp je schouderbladen bewust samen."
+      },
+      "safety_tip": "Adem uit op het trekken en houd je adem niet in. Houd je nek en schouders ontspannen, niet opgetrokken. Stop als een nog goede herhaling lastig wordt; ga niet door tot je niet meer kunt.",
+      "easier": "Trek met minder kracht aan de handdoek, of doe het zittend op een stevige stoel.",
+      "harder": "Trek harder en houd de eindstand 2 tellen vast, of doe meer herhalingen.",
+      "cautions": "Geen bijzondere. Voorzichtig bij schouder- of nekklachten; stop bij scherpe pijn.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen",
+      "equipment": "Handdoek",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die zittend een handdoek voor zich strak trekt, schouderbladen samengeknepen, kalme huiskameromgeving."
+    },
+    {
+      "id": "muur-opdrukken",
+      "name": "Opdrukken tegen de muur (wall push-up)",
+      "category": "Schouders & armen",
+      "short_explanation": "Je duwt jezelf met je armen weg van de muur en weer terug.",
+      "why_useful": "Maakt je borst, schouders en armen sterker, zodat je makkelijker iets van je af duwt, een zware deur openduwt of jezelf omhoog drukt uit een stoel of bad.",
+      "target_muscles": [
+        "borstspieren",
+        "voorste schouders",
+        "triceps (achterkant bovenarm)"
+      ],
+      "adl": "Een zware deur openduwen, een winkelwagen vooruit duwen of jezelf met je armen omhoog drukken uit bad of stoel.",
+      "steps": [
+        "Ga op armlengte afstand voor een stevige muur staan, voeten op heupbreedte.",
+        "Zet je handen plat tegen de muur, iets breder dan je schouders, op schouderhoogte.",
+        "Buig langzaam je ellebogen en breng je borst rustig richting de muur; houd je lijf recht als een plank.",
+        "Adem uit en duw jezelf vlot maar beheerst weer terug tot je armen bijna gestrekt zijn.",
+        "Herhaal in een rustig tempo en houd je buik licht aangespannen."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 herhalingen, sta wat dichter bij de muur zodat het lichter is.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 12 herhalingen.",
+        "sterker_worden": "2 tot 3 sets van 12 tot 15 herhalingen; sta verder van de muur en duw de omhoog-fase iets vlotter."
+      },
+      "safety_tip": "Adem uit terwijl je wegduwt en houd je adem nooit in. Stop als een nog goede herhaling lastig wordt; je hoeft nooit door te gaan tot je niet meer kunt.",
+      "easier": "Ga dichter bij de muur staan, dan rust er minder gewicht op je armen. Of doe minder herhalingen.",
+      "harder": "Ga verder van de muur staan, of doe het tegen een lager, stevig aanrecht zodat je meer gewicht draagt; houd je lijf wel recht en buig niet door in je rug.",
+      "cautions": "Geen bijzondere. Doe het rustiger bij schouder- of polsklachten en stop bij scherpe pijn.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige muur",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop tegen een stevige muur staat met handen op schouderhoogte, lijf recht, in een lichte huiskamer."
+    },
+    {
+      "id": "wall-angels-aangepast",
+      "name": "Wall angels (armen langs de muur)",
+      "category": "Schouders & armen",
+      "short_explanation": "Je schuift met je rug tegen de muur je armen rustig omhoog en omlaag.",
+      "why_useful": "Helpt je schouders en bovenrug soepel en sterk te houden voor een rechte houding, zodat aankleden en omhoog reiken makkelijker gaat.",
+      "target_muscles": [
+        "bovenrug",
+        "schouderbladspieren",
+        "schouderspieren"
+      ],
+      "adl": "Een trui over je hoofd aantrekken, je haar doen en spullen van een hoge plank pakken.",
+      "steps": [
+        "Ga met je rug tegen een muur staan, voeten een klein stukje van de muur af, knieën licht gebogen.",
+        "Druk je onderrug, bovenrug en achterhoofd zacht tegen de muur.",
+        "Buig je ellebogen en breng je armen tegen de muur in een 'handen omhoog'-stand.",
+        "Schuif je armen rustig omhoog langs de muur zover als comfortabel lukt, adem uit.",
+        "Schuif je armen langzaam weer omlaag en houd het contact met de muur zoveel mogelijk vast."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 6 tot 8 rustige bewegingen omhoog en omlaag, binnen een klein bereik.",
+        "actief_blijven": "1 tot 2 sets van 8 tot 10 herhalingen met een groter bereik.",
+        "sterker_worden": "2 sets van 10 tot 12 herhalingen; probeer je armen rustig verder omhoog te schuiven."
+      },
+      "safety_tip": "Adem uit op het omhoog schuiven en houd je adem niet in. Ga niet hoger dan comfortabel; je onderrug hoeft niet hol te trekken en moet zacht tegen de muur blijven.",
+      "easier": "Maak het bereik kleiner: schuif je armen maar een klein stukje omhoog. Of doe het zittend tegen een rugleuning.",
+      "harder": "Vergroot het bereik en beweeg langzamer, zodat je schouders harder werken.",
+      "cautions": "Voorzichtig bij schouderklachten. Bij osteoporose: houd je rug neutraal tegen de muur en trek je onderrug niet hol; vermijd doorbuigen in je rug.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Muur",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon met rug tegen de muur, armen tegen de muur in een 'handen omhoog'-stand, knieën licht gebogen."
+    },
+    {
+      "id": "zijwaartse-armheffing",
+      "name": "Zijwaartse armheffing (zonder gewicht)",
+      "category": "Schouders & armen",
+      "short_explanation": "Je heft je gestrekte armen rustig zijwaarts tot schouderhoogte en laat ze weer zakken.",
+      "why_useful": "Versterkt je schouders, zodat je makkelijker iets opzij tilt, je armen heft om te reiken en je houding sterk blijft.",
+      "target_muscles": [
+        "zijkant schouders",
+        "bovenrug"
+      ],
+      "adl": "Een boodschappentas opzij tillen, een jas ophangen en omhoog reiken naar een kast.",
+      "steps": [
+        "Ga rechtop staan met je voeten op heupbreedte, armen ontspannen langs je lijf.",
+        "Span je buik licht aan en houd je schouders laag.",
+        "Adem uit en hef je gestrekte armen rustig zijwaarts tot ongeveer schouderhoogte.",
+        "Houd 1 tel vast; je handen zijn niet hoger dan je schouders.",
+        "Laat je armen langzaam en beheerst weer zakken en herhaal."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 herhalingen zonder gewicht, eventueel armen iets minder hoog.",
+        "actief_blijven": "1 tot 2 sets van 10 tot 12 herhalingen tot schouderhoogte.",
+        "sterker_worden": "2 tot 3 sets van 12 tot 15 herhalingen, of houd in elke hand een lichte boodschappentas of waterfles vast."
+      },
+      "safety_tip": "Til niet hoger dan schouderhoogte en houd je schouders laag, niet opgetrokken. Adem uit op het heffen en stop als een nog goede herhaling lastig wordt.",
+      "easier": "Hef je armen maar tot halve hoogte, of doe één arm tegelijk en steun met je andere hand op een stoel.",
+      "harder": "Houd in elke hand iets lichts vast, zoals een gevulde waterfles of een lichte boodschappentas, en beweeg langzamer.",
+      "cautions": "Voorzichtig bij schouderklachten; til niet boven schouderhoogte als dat pijn geeft. Stop bij scherpe pijn.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen",
+      "equipment": "Geen (eventueel boodschappentas of waterfles voor zwaarder)",
+      "media_placeholder": "Rustige illustratie van een oudere persoon staand die gestrekte armen zijwaarts tot schouderhoogte heft, schouders laag, ontspannen houding."
+    },
+    {
+      "id": "ademhaling-houding-reset",
+      "name": "Ademhaling en houding reset",
+      "category": "Core/stabiliteit",
+      "short_explanation": "Je ademt rustig naar je buik en zet tegelijk je houding lang en rechtop, om je romp te activeren en te ontspannen.",
+      "why_useful": "Rustig ademen met een goede houding helpt je dieper liggende buikspieren mee te doen en maakt het prettiger om langer rechtop te zitten of staan.",
+      "target_muscles": [
+        "Diepe buikspieren",
+        "Middenrif",
+        "Houdingsspieren rug"
+      ],
+      "adl": "Helpt je rechtop blijven achter de computer of aan tafel, en geeft je een rustig en stabiel gevoel voor je gaat bewegen.",
+      "steps": [
+        "Ga rechtop zitten of staan, schouders ontspannen, kruin licht naar het plafond.",
+        "Leg één hand op je buik en adem rustig in door je neus; voel je buik zacht uitzetten onder je hand.",
+        "Adem langzaam uit door je mond en voel je buik licht naar binnen komen; trek hem niet hard in.",
+        "Maak jezelf bij het uitademen lang en rechtop, schouders laag en ontspannen.",
+        "Herhaal dit in een rustig, prettig tempo zonder te forceren."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 5 rustige ademhalingen, zittend met steun in je rug indien prettig.",
+        "actief_blijven": "1-2 sets van 6-8 rustige ademhalingen, zittend of staand.",
+        "sterker_worden": "2-3 sets van 8-10 rustige ademhalingen staand, met aan het eind van elke uitademing je buik heel licht aanspannen om je romp te activeren."
+      },
+      "safety_tip": "Adem rustig en ontspannen; nooit persen of je adem inhouden. Voel je je licht in het hoofd, ga dan gewoon weer normaal ademen en zit indien nodig even.",
+      "easier": "Doe de oefening zittend met je rug ondersteund en adem in je eigen rustige tempo, zonder de buik aan te spannen.",
+      "harder": "Doe het staand en span aan het eind van elke uitademing je buik heel licht aan, alsof je je broek dichtknoopt, terwijl je lang en rechtop blijft.",
+      "cautions": "Geen bijzondere; stop bij pijn. Voel je je duizelig of licht in het hoofd, ga dan terug naar gewoon rustig ademen. Geen voorovergebogen houding nodig, dus ook prettig bij osteoporose.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen; een stoel met rugleuning is prettig",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een 60+ persoon die rechtop zit met één hand op de buik, ontspannen gezicht, lange rug, sfeer van kalm ademhalen."
+    },
+    {
+      "id": "bird-dog-aangepast",
+      "name": "Bird-dog aangepast (arm en been om de beurt uitstrekken)",
+      "category": "Core/stabiliteit",
+      "short_explanation": "Op handen en knieën strek je rustig om de beurt een arm en het tegenovergestelde been uit, terwijl je rug recht blijft.",
+      "why_useful": "Dit traint je rug en buik om je romp stabiel te houden terwijl je beweegt, wat helpt bij bukken, reiken en je evenwicht bewaren.",
+      "target_muscles": [
+        "Onderrug",
+        "Buikspieren",
+        "Bilspieren",
+        "Schouders"
+      ],
+      "adl": "Helpt je bij stabiel reiken naar een kast, bukken zonder uit balans te raken en rechtop blijven tijdens dagelijkse bewegingen.",
+      "steps": [
+        "Kom op handen en knieën, handen onder je schouders en knieën onder je heupen; gebruik eventueel een matje of handdoek onder je knieën.",
+        "Span je buik licht aan en maak je rug lang en recht, kijk naar de grond.",
+        "Strek rustig één arm naar voren uit; houd je rug recht en zak niet door.",
+        "Lukt dat goed, strek dan tegelijk het tegenovergestelde been naar achteren, niet hoger dan je heup, tot een rechte lijn met je romp.",
+        "Adem uit terwijl je uitstrekt, kom rustig terug en wissel naar de andere kant."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 5-6 keer per kant, alleen je arm uitstrekken (nog niet het been), rug recht houden.",
+        "actief_blijven": "1-2 sets van 8-10 keer per kant, arm en tegenovergesteld been samen uitstrekken.",
+        "sterker_worden": "2-3 sets van 10-12 keer per kant, arm en been even langer aangespannen vasthouden voor je terugkomt; rust kort tussen de sets."
+      },
+      "safety_tip": "Houd je rug recht en je buik licht aangespannen; laat je onderrug niet doorzakken, til je been niet hoger dan je heup en draai je heupen niet mee. Adem uit op de inspanning, houd je adem nooit in.",
+      "easier": "Strek alleen je arm uit, of alleen je been, en houd de beweging klein zodat je rug makkelijk recht blijft. Leg een handdoek onder je knieën voor comfort.",
+      "harder": "Houd arm en been 2-3 seconden vast in een rechte lijn (niet hoger dan je heup) voor je terugkomt, of doe de bewegingen iets langzamer en gecontroleerder.",
+      "cautions": "Geen bijzondere; stop bij pijn. Bij osteoporose is dit geschikt zolang je rug recht (neutraal) blijft: zak niet door en til je been niet hoger dan je heup, zodat je je onderrug niet overstrekt of hol trekt. Op handen en knieën kan lastig zijn bij gevoelige knieën, polsen of moeite met op de grond komen; kies dan de staande variant of een andere core-oefening.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen; matje of handdoek onder de knieën voor comfort",
+      "equipment": "Matje of handdoek (optioneel)",
+      "media_placeholder": "Rustige illustratie van een 60+ persoon op handen en knieën op een matje, die één arm naar voren en het tegenovergestelde been naar achteren strekt in een rechte lijn (been niet hoger dan de heup), neutrale rug duidelijk zichtbaar."
+    },
+    {
+      "id": "tafel-plank",
+      "name": "Tafel plank (plank tegen tafel of aanrecht)",
+      "category": "Core/stabiliteit",
+      "short_explanation": "Je leunt schuin op een stevige tafel of aanrecht en houdt je lijf in een rechte lijn vast.",
+      "why_useful": "Een sterke buik en onderrug helpen je rechtop te blijven, makkelijker te tillen en je houding vol te houden tijdens dagelijkse klusjes.",
+      "target_muscles": [
+        "Buikspieren",
+        "Onderrug",
+        "Schouders",
+        "Bilspieren"
+      ],
+      "adl": "Helpt je bij rechtop staan aan het aanrecht, het dragen van een volle boodschappentas en stevig blijven als je iets vasthoudt.",
+      "steps": [
+        "Ga voor een stevige tafel of het aanrecht staan en zet je handen iets verder dan schouderbreed op de rand.",
+        "Loop met je voeten een stukje naar achteren zodat je lijf schuin staat in een rechte lijn.",
+        "Span je buik licht aan en knijp je billen samen; je lichaam vormt een rechte lijn van hoofd tot hielen.",
+        "Adem rustig door en houd de positie vast; je adem nooit inhouden.",
+        "Loop met je voeten weer naar voren en sta rustig rechtop om te stoppen."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 10-15 seconden vasthouden, met je handen hoog op de tafel of het aanrecht (steiler is makkelijker). Ook een paar tellen is al waardevol; bouw rustig op.",
+        "actief_blijven": "1-2 sets van 20-30 seconden vasthouden, met je handen iets lager.",
+        "sterker_worden": "2-3 sets van 30-45 seconden vasthouden, handen lager voor meer uitdaging; rust 30-60 seconden tussen de sets. Stop zodra je je rug niet meer recht kunt houden."
+      },
+      "safety_tip": "Houd je rug recht en je buik licht aangespannen; laat je onderrug niet doorzakken. Adem rustig door en houd je adem nooit in. Stop als je het vasthouden niet meer netjes lukt.",
+      "easier": "Zet je handen hoger (op een hoge tafel, aanrecht of zelfs tegen de muur) en je voeten dichter bij de tafel; hoe steiler je staat, hoe lichter het is.",
+      "harder": "Zet je handen lager (op een lagere, stevige tafel) en je voeten verder naar achteren, of houd de positie langer vast.",
+      "cautions": "Geen bijzondere; stop bij pijn. Let op dat de tafel of het aanrecht stevig staat en niet wegglijdt. Houd je rug in een neutrale rechte lijn (niet doorzakken en niet hol trekken), dat is ook prettig bij gevoelige polsen, schouders of bij osteoporose.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige tafel of aanrecht dat niet kan wegschuiven",
+      "equipment": "Stevige tafel of aanrecht",
+      "media_placeholder": "Rustige illustratie van een 60+ persoon die schuin op een stevig aanrecht leunt in een rechte lijn van hoofd tot hielen, ontspannen gezicht, neutrale rug duidelijk zichtbaar."
+    },
+    {
+      "id": "zittende-march",
+      "name": "Zittende march (knieën om de beurt optillen)",
+      "category": "Core/stabiliteit",
+      "short_explanation": "Je zit rechtop op een stoel en tilt om de beurt rustig je knie op, alsof je zittend marcheert.",
+      "why_useful": "Dit traint je buik en heupbuigers en helpt je romp stabiel te houden, zodat lopen, traplopen en in- en uitstappen makkelijker en zekerder voelen.",
+      "target_muscles": [
+        "Buikspieren",
+        "Heupbuigers",
+        "Onderrug"
+      ],
+      "adl": "Helpt je bij lopen, in en uit de auto stappen en je voeten optillen over een drempel of stoeprand.",
+      "steps": [
+        "Ga rechtop op een stevige stoel zitten, voeten plat op de grond, handen losjes op de zitting of de leuningen.",
+        "Span je buik licht aan en zit lang en rechtop.",
+        "Til rustig één knie een stukje omhoog en zet de voet weer neer.",
+        "Til daarna de andere knie op; blijf rechtop zitten en zak niet onderuit.",
+        "Adem rustig door en wissel om de beurt af in een prettig tempo."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8-10 keer per been (om de beurt), knie maar een klein stukje optillen, eventueel met je handen op de leuningen voor steun.",
+        "actief_blijven": "1-2 sets van 10-12 keer per been, knie wat hoger optillen, handen los van de leuning.",
+        "sterker_worden": "2-3 sets van 12-15 keer per been in een iets vlotter tempo, armen meebewegen zoals bij echt marcheren; rust kort tussen de sets."
+      },
+      "safety_tip": "Blijf rechtop zitten en houd je buik licht aangespannen; til niet zo hoog dat je onderuit zakt of je rug kromt. Adem gewoon door en houd je adem niet in.",
+      "easier": "Til je knie maar een klein stukje op, gebruik de leuningen als steun en ga rustiger.",
+      "harder": "Til je knie hoger, beweeg je armen mee in marcheertempo, of houd elke knie heel even boven voordat je hem neerzet.",
+      "cautions": "Geen bijzondere; stop bij pijn. Bij osteoporose: blijf rechtop zitten en buig niet voorover naar je knie toe.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel; leuningen handig als steun",
+      "equipment": "Stevige stoel",
+      "media_placeholder": "Rustige illustratie van een 60+ persoon die rechtop op een stevige stoel zit en één knie optilt, lange rug, ontspannen schouders, andere voet plat op de grond."
+    },
+    {
+      "id": "boodschappentas-carry",
+      "name": "Boodschappentas dragen (farmer carry)",
+      "category": "Dagelijkse kracht",
+      "short_explanation": "Je draagt een gevulde tas (of twee) en loopt er rustig en rechtop mee.",
+      "why_useful": "Dit traint je grip, schouders en romp precies zoals bij boodschappen dragen, zodat je makkelijker met een volle tas door huis en naar de auto loopt.",
+      "target_muscles": [
+        "onderarmen en grip",
+        "schouders",
+        "rompspieren (core)",
+        "bovenrug"
+      ],
+      "adl": "Boodschappen van de auto naar de keuken dragen, een tas met de hond-spullen of de was verplaatsen.",
+      "steps": [
+        "Zet een stevige stoel of het aanrecht binnen handbereik en pak een tas met wat gewicht erin.",
+        "Sta rechtop, schouders rustig naar achteren en omlaag, buik licht aangespannen.",
+        "Houd de tas naast je lichaam met een rechte pols en loop in een rustig tempo.",
+        "Adem rustig door; houd je adem niet in.",
+        "Loop een stukje, draai rustig om en loop terug; zet de tas neer door door je knieen te zakken met een rechte rug, niet door voorover te bukken."
+      ],
+      "dosage": {
+        "rustig_starten": "1 keer een lichte tas (in 1 hand) dragen over ongeveer 5-10 meter heen en terug, met stoel of aanrecht in de buurt om even bij te steunen.",
+        "actief_blijven": "1-2 keer een tas in elke hand dragen over ongeveer 10-15 meter heen en terug.",
+        "sterker_worden": "2-3 keer een wat zwaardere tas in elke hand over ongeveer 15-20 meter, of een tas in 1 hand om je romp extra te laten werken (blijf bewust rechtop, leun niet opzij)."
+      },
+      "safety_tip": "Kies een gewicht waarmee je rechtop en met rustige ademhaling blijft lopen; zorg dat de vloer vrij is van losse kleedjes of drempels.",
+      "easier": "Gebruik een lichtere tas of draag in 1 hand en houd met je andere hand het aanrecht vast tijdens het lopen.",
+      "harder": "Maak de tassen wat zwaarder, loop een langer stuk, of draag de tas in 1 hand zodat je romp harder moet werken om recht te blijven (zonder opzij te hangen).",
+      "cautions": "Til de tas op en zet hem neer met gebogen knieen en een rechte rug, niet met een ronde rug voorover. Bij osteoporose: blijf rechtop en buig niet belast voorover; draai met je hele lichaam mee in plaats van je romp te wringen. Bij een tas in 1 hand: leun niet opzij maar houd je romp recht. Stop bij pijn of duizeligheid.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel of aanrecht binnen handbereik",
+      "equipment": "Boodschappentas of stevige tas met wat gewicht (bijvoorbeeld pakken rijst of flessen water)",
+      "media_placeholder": "Rustige illustratie van iemand die rechtop met een tas in elke hand door de keuken loopt, aanrecht zichtbaar binnen handbereik als steun."
+    },
+    {
+      "id": "functioneel-bukken-en-reiken",
+      "name": "Functioneel bukken en reiken (hip hinge)",
+      "category": "Dagelijkse kracht",
+      "short_explanation": "Je buigt vanuit je heupen naar voren met een rechte rug om iets te pakken, en komt weer omhoog.",
+      "why_useful": "Dit leert je veilig bukken en reiken vanuit je heupen in plaats van je rug, zodat je makkelijker iets van een lage plank of de grond pakt zonder je rug te overbelasten.",
+      "target_muscles": [
+        "bilspieren",
+        "achterkant bovenbenen (hamstrings)",
+        "onderrug-stabilisatoren",
+        "rompspieren (core)"
+      ],
+      "adl": "Een pan uit een laag keukenkastje pakken, de krant van de mat oprapen, je schoenen aangeven.",
+      "steps": [
+        "Sta rechtop voor een stevige stoel of het aanrecht, voeten op heupbreedte.",
+        "Houd je rug lang en recht; duw je heupen naar achteren alsof je een deur achter je dichtduwt.",
+        "Buig licht door je knieen en reik met je handen rustig naar voren of omlaag, zonder je rug te laten ronden.",
+        "Adem uit terwijl je via je heupen en billen weer rustig omhoog komt; houd je adem niet in.",
+        "Sta volledig rechtop met aangespannen billen en herhaal rustig."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 herhalingen, met 1 hand licht op de stoel of het aanrecht voor steun; beweeg ondiep en rustig.",
+        "actief_blijven": "1-2 sets van 10-12 herhalingen, eventueel zonder steun maar met de stoel binnen handbereik.",
+        "sterker_worden": "2-3 sets van 12-15 herhalingen, iets dieper bukken of met een lichte tas in je handen voor wat meer weerstand."
+      },
+      "safety_tip": "Houd je rug lang en recht en beweeg vanuit je heupen, niet vanuit een ronde rug; stop bij pijn in je rug.",
+      "easier": "Buig minder ver naar voren, houd je hand op de stoel of het aanrecht, en doe minder herhalingen.",
+      "harder": "Buig wat dieper, laat de steun los, of houd een lichte tas vast zodat je billen en achterkant bovenbenen meer werken.",
+      "cautions": "Bij osteoporose: buig vanuit je heupen met een RECHTE rug; vermijd een belaste, ronde voorwaartse rompbuiging en eindstandige draaibewegingen, en doe deze oefening zonder extra gewicht in je handen. Bij valrisico de steun binnen handbereik houden. Stop bij rugpijn of duizeligheid.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel of aanrecht binnen handbereik",
+      "equipment": "Geen (eventueel een lichte tas voor extra weerstand)",
+      "media_placeholder": "Rustige illustratie zij-aanzicht van iemand die met een rechte rug vanuit de heupen voorover buigt, 1 hand licht op het aanrecht, ruggengraat duidelijk lang en neutraal."
+    },
+    {
+      "id": "iets-op-schap-hoogte-wegzetten",
+      "name": "Iets op schap-hoogte wegzetten (omhoog reiken)",
+      "category": "Dagelijkse kracht",
+      "short_explanation": "Je reikt met een licht voorwerp rustig omhoog naar schouder- of plankhoogte en zet het weg.",
+      "why_useful": "Dit traint je schouders en romp voor het reiken boven schouderhoogte, zodat je makkelijker iets in een kast of op een plank zet zonder uit balans te raken.",
+      "target_muscles": [
+        "schouders",
+        "bovenrug",
+        "armen",
+        "rompspieren (core)"
+      ],
+      "adl": "Een pak in een hoog keukenkastje zetten, een handdoek op een hoge plank leggen, iets uit de kast pakken.",
+      "steps": [
+        "Sta rechtop voor de plank of kast, voeten op heupbreedte, het aanrecht binnen handbereik.",
+        "Pak een licht voorwerp met beide handen vast en houd het ter hoogte van je borst.",
+        "Span je buik licht aan en reik rustig omhoog naar plankhoogte, zonder je rug hol te trekken.",
+        "Adem uit terwijl je omhoog reikt en zet het voorwerp rustig op zijn plek; houd je adem niet in.",
+        "Breng je armen gecontroleerd weer omlaag en herhaal rustig."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 herhalingen met een licht voorwerp tot schouderhoogte, met je voeten stevig en het aanrecht naast je voor balans.",
+        "actief_blijven": "1-2 sets van 10-12 herhalingen tot plankhoogte met een licht voorwerp.",
+        "sterker_worden": "2-3 sets van 12-15 herhalingen, een iets zwaarder voorwerp of net iets hoger reiken (binnen comfortabel bereik)."
+      },
+      "safety_tip": "Reik niet zo ver omhoog dat je op je tenen moet of je rug hol trekt; houd je voeten plat en het aanrecht binnen handbereik voor je balans.",
+      "easier": "Reik tot schouderhoogte in plaats van boven je hoofd, gebruik een heel licht voorwerp en houd zo nodig met 1 hand het aanrecht vast.",
+      "harder": "Reik iets hoger, gebruik een wat zwaarder voorwerp, of breng eerst 1 voorwerp omhoog en daarna het andere om je balans extra uit te dagen (steun nabij).",
+      "cautions": "Bij osteoporose: reik rustig omhoog zonder je rug te overstrekken (geen sterke rugextensie) en zonder te draaien met gewicht boven je hoofd. Bij schouderklachten alleen reiken tot waar het comfortabel is. Bij valrisico steun binnen handbereik; ga niet op je tenen staan. Stop bij pijn of duizeligheid.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Aanrecht of stevige stoel binnen handbereik",
+      "equipment": "Een licht voorwerp (bijvoorbeeld een pak, een opgevouwen handdoek of een lege doos)",
+      "media_placeholder": "Rustige illustratie van iemand die met platte voeten en rechte houding een licht pak op een keukenplank zet, aanrecht binnen handbereik als steun."
+    },
+    {
+      "id": "iets-veilig-van-de-grond-tillen",
+      "name": "Iets veilig van de grond tillen (squat-lift)",
+      "category": "Dagelijkse kracht",
+      "short_explanation": "Je zakt door je knieen, pakt iets dicht bij je lichaam en staat met je benen weer op.",
+      "why_useful": "Dit traint de tiltechniek die je dagelijks gebruikt, zodat je een doos, mand of kleinkind veilig en met je benen optilt in plaats van met je rug.",
+      "target_muscles": [
+        "bovenbenen (quadriceps)",
+        "bilspieren",
+        "rompspieren (core)",
+        "grip"
+      ],
+      "adl": "Een wasmand oppakken, een doos van de grond tillen, iets opnemen wat je hebt laten vallen.",
+      "steps": [
+        "Zet het voorwerp dicht bij je voeten en zet je voeten op schouderbreedte.",
+        "Zak door je knieen en duw je heupen naar achteren, met je rug lang en recht.",
+        "Pak het voorwerp stevig vast en houd het dicht tegen je lichaam.",
+        "Adem uit en sta op door je benen te strekken; houd je rug recht en je adem niet in.",
+        "Sta rechtop en zet het voorwerp op dezelfde manier weer rustig neer, zonder te draaien met het gewicht."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 8 herhalingen met een licht voorwerp dat op een lage kruk of stoel staat (zodat je minder diep hoeft te zakken), met steun van het aanrecht of een stoel naast je; zak maar zo diep als comfortabel is.",
+        "actief_blijven": "1-2 sets van 10-12 herhalingen met een licht tot middelzwaar voorwerp, vanaf de grond of een lage kruk.",
+        "sterker_worden": "2-3 sets van 10-15 herhalingen met een wat zwaarder voorwerp, of kom iets vlotter maar beheerst omhoog (steun in de buurt)."
+      },
+      "safety_tip": "Houd het voorwerp dicht tegen je lichaam en je rug recht; til niets dat zo zwaar is dat je het niet beheerst omhoog krijgt.",
+      "easier": "Til een lichter voorwerp dat op een lage kruk staat (minder diep zakken), houd je hand op het aanrecht en doe minder herhalingen.",
+      "harder": "Til een wat zwaarder voorwerp, zak iets dieper door je knieen, of kom met een vlottere maar beheerste omhoog-beweging (power) terug overeind.",
+      "cautions": "Bij osteoporose: til met je benen en houd je rug RECHT; vermijd een ronde rug, voorover gebogen tillen en draaien met het gewicht. Moet je voor het voorwerp helemaal naar de grond? Zet het dan eerst op een lage kruk of stoel zodat je niet belast voorover hoeft te buigen. Bij knie- of heupklachten minder diep zakken. Bij valrisico steun binnen handbereik. Stop bij pijn.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel of aanrecht binnen handbereik",
+      "equipment": "Een licht tot middelzwaar voorwerp (bijvoorbeeld een lichte doos, mand of boodschappentas)",
+      "media_placeholder": "Rustige illustratie van iemand die met gebogen knieen en rechte rug een mand dicht bij het lichaam van de grond tilt, aanrecht naast hem als steun."
+    },
+    {
+      "id": "enkels-losdraaien-en-pompen",
+      "name": "Enkels losdraaien en pompen",
+      "category": "Mobiliteit",
+      "short_explanation": "Je beweegt je voet op en neer en draait je enkel rond om hem soepel te houden.",
+      "why_useful": "Soepele enkels helpen je stabieler lopen en makkelijker je evenwicht bewaren op een drempel of trap.",
+      "target_muscles": [
+        "Kuitspieren",
+        "Scheenbeenspieren",
+        "Enkelspieren"
+      ],
+      "adl": "Helpt je soepeler lopen en je voet goed neerzetten op een drempel of trede.",
+      "steps": [
+        "Ga op een stevige stoel zitten met je rug recht.",
+        "Til een voet een stukje van de grond.",
+        "Trek je tenen naar je toe en duw ze daarna van je af (pompen).",
+        "Draai daarna je enkel rustig een paar keer rond.",
+        "Zet je voet neer en doe hetzelfde met je andere voet."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set: 8 keer pompen en 5 rondjes per kant, per voet.",
+        "actief_blijven": "1-2 sets: 10 keer pompen en 6-8 rondjes per kant, per voet.",
+        "sterker_worden": "2-3 sets: 12-15 keer pompen en 8-10 rondjes per kant, per voet."
+      },
+      "safety_tip": "Beweeg binnen een prettige range en adem gewoon door; stop bij kramp of scherpe pijn in de enkel.",
+      "easier": "Doe alleen het pompen (op en neer) en laat het ronddraaien weg.",
+      "harder": "Doe de oefening staand met een hand stevig aan het aanrecht of een stevige stoel; til maar net je voet op en blijf goed in balans.",
+      "cautions": "Bij de staande variant sta je op een been: houd dan altijd steun binnen handbereik en wees extra voorzichtig bij duizeligheid of valangst. Bij een recente enkelblessure rustig opbouwen.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel (staande variant: aanrecht of stevige stoel als steun)",
+      "equipment": "Stevige stoel (staande variant: aanrecht of stevige stoel)",
+      "media_placeholder": "Rustige illustratie van een oudere persoon op een stevige stoel die een voet optilt en de enkel rondjes laat draaien; ontspannen houding."
+    },
+    {
+      "id": "knie-heffen-hoog",
+      "name": "Knie heffen (hoog)",
+      "category": "Mobiliteit",
+      "short_explanation": "Je tilt om de beurt je knie hoog op, alsof je rustig ter plaatse marcheert.",
+      "why_useful": "Dit houdt je heupen soepel en helpt je je voeten goed optillen, zodat je makkelijker een drempel of trede neemt.",
+      "target_muscles": [
+        "Heupbuigers",
+        "Bovenbeenspieren",
+        "Core/buikspieren"
+      ],
+      "adl": "Helpt je je voeten goed optillen bij een drempel, stoeprand of de eerste trede.",
+      "steps": [
+        "Ga rechtop staan naast een stevige stoel of aanrecht en houd je vast.",
+        "Til je ene knie rustig omhoog richting heuphoogte.",
+        "Zet je voet weer gecontroleerd neer.",
+        "Til daarna je andere knie op, alsof je rustig marcheert.",
+        "Houd je rug recht en blijf gewoon doorademen."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 6-8 keer per been, met steun en kniehoogte naar comfort.",
+        "actief_blijven": "1-2 sets van 10 keer per been, knie iets hoger.",
+        "sterker_worden": "2-3 sets van 12-15 keer per been; eventueel met minder steun en iets vlotter tempo."
+      },
+      "safety_tip": "Houd je steun binnen handbereik en til alleen zo hoog als je goed in balans blijft; houd je adem niet in.",
+      "easier": "Doe de oefening zittend, of til je knie minder hoog op.",
+      "harder": "Houd minder vast (een vinger op de stoel of het aanrecht) of doe het iets vlotter en beheerst, met steun nabij.",
+      "cautions": "Valrisico: gebruik altijd steun bij twijfel over je balans en houd het aanrecht of de stoel binnen handbereik. Wees extra voorzichtig bij duizeligheid of valangst.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel of aanrecht",
+      "equipment": "Stevige stoel of aanrecht",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die staand een knie naar heuphoogte tilt, een hand op het aanrecht; steun duidelijk zichtbaar."
+    },
+    {
+      "id": "nek-rustig-draaien",
+      "name": "Nek rustig draaien",
+      "category": "Mobiliteit",
+      "short_explanation": "Je draait je hoofd langzaam naar links en rechts om je nek soepel te houden.",
+      "why_useful": "Dit houdt je nek soepel, zodat je makkelijker over je schouder kijkt, bijvoorbeeld bij het achteruitkijken of oversteken.",
+      "target_muscles": [
+        "Nekspieren",
+        "Bovenste rugspieren"
+      ],
+      "adl": "Helpt je makkelijker over je schouder kijken bij het oversteken of achteruitlopen.",
+      "steps": [
+        "Ga rechtop zitten of staan met ontspannen schouders.",
+        "Kijk recht vooruit en houd je kin licht ingetrokken.",
+        "Draai je hoofd langzaam naar links tot een prettige rek.",
+        "Kom rustig terug naar het midden.",
+        "Draai dan langzaam naar rechts en weer terug.",
+        "Beweeg rustig en blijf gewoon doorademen."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 4 keer naar elke kant, met kleine draaien.",
+        "actief_blijven": "1-2 sets van 6 keer naar elke kant.",
+        "sterker_worden": "2 sets van 8 keer naar elke kant, iets verder draaien binnen je comfort."
+      },
+      "safety_tip": "Draai langzaam en stop als je duizelig wordt of het licht wordt in je hoofd; houd je adem niet in.",
+      "easier": "Draai minder ver en houd de bewegingen klein.",
+      "harder": "Houd het hoofd aan het eind van de draai 2-3 seconden vast, binnen je comfort en zonder te forceren.",
+      "cautions": "Laat je hoofd niet achterover vallen; geen snelle of eindstandige draaien. Wees extra voorzichtig bij duizeligheid of nekklachten; ga dan eerst zitten zodat je niet uit balans raakt.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die zittend het hoofd langzaam naar de zijkant draait; nadruk op kalme, gecontroleerde beweging."
+    },
+    {
+      "id": "schouderrollen",
+      "name": "Schouderrollen",
+      "category": "Mobiliteit",
+      "short_explanation": "Je rolt je schouders rustig in een cirkel, eerst naar achteren en dan naar voren.",
+      "why_useful": "Dit maakt je schouders en bovenrug losser, zodat je makkelijker iets uit een hoge kast pakt of een jas aantrekt.",
+      "target_muscles": [
+        "Schoudergordel",
+        "Bovenste rugspieren (trapezius)",
+        "Borstspieren"
+      ],
+      "adl": "Helpt je makkelijker reiken naar een hoge plank en je jas of trui aantrekken.",
+      "steps": [
+        "Ga rechtop zitten of staan, armen ontspannen langs je lichaam.",
+        "Breng je schouders rustig omhoog naar je oren.",
+        "Rol ze daarna naar achteren en weer omlaag, een ronde beweging.",
+        "Maak rustige, vloeiende cirkels en adem gewoon door.",
+        "Doe de helft naar achteren, daarna de helft naar voren."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 5 rondjes naar achteren en 5 naar voren, klein en rustig.",
+        "actief_blijven": "1-2 sets van 8 rondjes naar achteren en 8 naar voren.",
+        "sterker_worden": "2-3 sets van 10-12 rondjes per richting, met grotere cirkels."
+      },
+      "safety_tip": "Houd de beweging rustig en pijnvrij; forceer niet en adem gewoon door (houd je adem niet in).",
+      "easier": "Maak de cirkels kleiner of doe alleen omhoog en omlaag (schouders ophalen).",
+      "harder": "Maak grotere cirkels of rol beide schouders tegelijk met je armen iets gestrekt.",
+      "cautions": "Stop bij scherpe of stekende pijn in de schouder; bij langdurige schouderklachten rustig en met kleine cirkels blijven.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Geen",
+      "equipment": "Geen",
+      "media_placeholder": "Rustige illustratie van een oudere persoon, zittend en rechtop, die schouders in een vloeiende cirkel naar achteren rolt; ontspannen gezicht."
+    },
+    {
+      "id": "zittende-rompdraai",
+      "name": "Zittende romp rustig draaien",
+      "category": "Mobiliteit",
+      "short_explanation": "Je draait zittend je bovenlichaam rustig naar links en rechts.",
+      "why_useful": "Dit houdt je rug en middel soepel, zodat je makkelijker omdraait om iets te pakken of achterom te kijken.",
+      "target_muscles": [
+        "Rompspieren",
+        "Buikspieren (schuine)",
+        "Rugspieren"
+      ],
+      "adl": "Helpt je makkelijker omdraaien om je gordel te pakken of iets van de achterbank te grijpen.",
+      "steps": [
+        "Ga rechtop op een stevige stoel zitten, voeten plat op de grond.",
+        "Leg je handen losjes op je bovenbenen of voor je borst.",
+        "Draai je bovenlichaam langzaam naar links, kijk mee over je schouder.",
+        "Kom rustig terug naar het midden.",
+        "Draai dan langzaam naar rechts en weer terug.",
+        "Blijf rechtop zitten en adem rustig door."
+      ],
+      "dosage": {
+        "rustig_starten": "1 set van 4 keer naar elke kant, klein en rustig.",
+        "actief_blijven": "1-2 sets van 6 keer naar elke kant.",
+        "sterker_worden": "2 sets van 8 keer naar elke kant, iets verder binnen je comfort."
+      },
+      "safety_tip": "Draai rustig en zonder te forceren en blijf rechtop zitten; stop bij pijn in je onderrug.",
+      "easier": "Draai minder ver en houd je handen op je benen.",
+      "harder": "Houd de draai 2-3 seconden vast binnen je comfort (niet aan het uiterste en zonder te forceren), of strek je armen iets voor je uit.",
+      "cautions": "Bij osteoporose: draai rustig, blijf binnen je comfort en niet tot het uiterste; vermijd krachtige of eindstandige rotatie. Blijf rechtop, draai nooit voorovergebogen.",
+      "suitable_levels": [
+        "Rustig starten",
+        "Actief blijven",
+        "Sterker worden"
+      ],
+      "support_needed": "Stevige stoel",
+      "equipment": "Stevige stoel",
+      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop op een stevige stoel zit en het bovenlichaam kalm naar de zijkant draait; rechte rug zichtbaar."
+    }
+  ]
+}
