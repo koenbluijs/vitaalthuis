@@ -3,17 +3,14 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useApp, useHydrated } from "@/lib/store";
-import {
-  computeStreak,
-  computeAggregates,
-  activeDaysThisMonth,
-} from "@/lib/progress";
+import { computeAggregates, activeDaysThisMonth } from "@/lib/progress";
 import { getDay } from "@/lib/data";
 import { BADGES } from "@/lib/badges";
 import { COPY } from "@/lib/copy";
 import { Screen } from "@/components/Screen";
 import { Card, PageHeader, ProgressBar } from "@/components/ui";
 import { CalendarStrip } from "@/components/CalendarStrip";
+import { WeekProgress } from "@/components/WeekProgress";
 import { cn } from "@/lib/cn";
 
 export default function ProgressPage() {
@@ -21,6 +18,7 @@ export default function ProgressPage() {
   const router = useRouter();
   const onboarded = useApp((s) => s.profile.onboarded);
   const progress = useApp((s) => s.progress);
+  const weeklyGoal = useApp((s) => s.settings.weeklyGoal);
 
   useEffect(() => {
     if (hydrated && !onboarded) router.replace("/");
@@ -29,7 +27,6 @@ export default function ProgressPage() {
   if (!hydrated || !onboarded) return null;
 
   const sessions = progress.sessions;
-  const streak = computeStreak(sessions);
   const agg = computeAggregates(sessions);
   const monthActive = activeDaysThisMonth(sessions);
 
@@ -48,17 +45,15 @@ export default function ProgressPage() {
     <Screen>
       <PageHeader title="Mijn voortgang" />
 
-      <Card className="text-center">
+      <Card>
+        <WeekProgress sessions={sessions} goal={weeklyGoal} />
+      </Card>
+
+      <Card className="mt-4 text-center">
         <p className="text-[1.15rem] font-semibold">
           {COPY.dayDone.usedMuscles(monthExercises)} deze maand.
         </p>
         <p className="text-text-muted mt-1">Mooi bezig, rustig aan zo.</p>
-        <div className="mt-3 flex items-center justify-center gap-2 text-[1.05rem]">
-          <span aria-hidden className="text-2xl">🌿</span>
-          <span className="font-semibold">
-            {streak === 0 ? COPY.streak.zero : COPY.streak.label(streak)}
-          </span>
-        </div>
       </Card>
 
       <Card className="mt-4">

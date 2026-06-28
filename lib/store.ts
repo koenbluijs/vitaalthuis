@@ -26,6 +26,7 @@ export interface Settings {
   reminderEnabled: boolean;
   reminderTime: string;
   habitAnchor: string;
+  weeklyGoal: number;
 }
 
 export interface Progress {
@@ -70,6 +71,7 @@ const initialSettings: Settings = {
   reminderEnabled: false,
   reminderTime: "08:30",
   habitAnchor: "",
+  weeklyGoal: 3,
 };
 
 const initialProgress: Progress = {
@@ -193,16 +195,23 @@ export const useApp = create<AppState>()(
             minutes: minutesFor(day, doneIds.length),
             finished: true,
           };
+          // Self-paced: max 1 programmadag per kalenderdag. Extra sessies tellen
+          // wel mee voor de streak, maar slaan geen dagen over.
+          const alreadyFinishedToday = s.progress.sessions.some(
+            (x) => x.date === today && x.finished,
+          );
           const sessions = upsertTodaySession(s.progress.sessions, rec);
-          const { currentDay, cycle } = nextDay(day, s.progress.cycle);
+          const adv = alreadyFinishedToday
+            ? { currentDay: s.progress.currentDay, cycle: s.progress.cycle }
+            : nextDay(day, s.progress.cycle);
           const next: AppState = {
             ...s,
             progress: {
               ...s.progress,
               sessions,
               active: null,
-              currentDay,
-              cycle,
+              currentDay: adv.currentDay,
+              cycle: adv.cycle,
             },
           };
           const badges = recomputeBadges(next);
@@ -212,6 +221,9 @@ export const useApp = create<AppState>()(
       confirmRest: (day) =>
         set((s) => {
           const today = dateStr();
+          const alreadyFinishedToday = s.progress.sessions.some(
+            (x) => x.date === today && x.finished,
+          );
           const rec: SessionRecord = {
             date: today,
             day,
@@ -222,10 +234,18 @@ export const useApp = create<AppState>()(
             finished: true,
           };
           const sessions = upsertTodaySession(s.progress.sessions, rec);
-          const { currentDay, cycle } = nextDay(day, s.progress.cycle);
+          const adv = alreadyFinishedToday
+            ? { currentDay: s.progress.currentDay, cycle: s.progress.cycle }
+            : nextDay(day, s.progress.cycle);
           const next: AppState = {
             ...s,
-            progress: { ...s.progress, sessions, active: null, currentDay, cycle },
+            progress: {
+              ...s.progress,
+              sessions,
+              active: null,
+              currentDay: adv.currentDay,
+              cycle: adv.cycle,
+            },
           };
           const badges = recomputeBadges(next);
           return { progress: { ...next.progress, ...badges } };

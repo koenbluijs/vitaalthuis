@@ -101,6 +101,32 @@ export default function SettingsPage() {
         </div>
       </Section>
 
+      <Section title={COPY.week.goalLabel}>
+        <p className="text-text-muted mb-3">{COPY.week.goalHint}</p>
+        <div className="grid grid-cols-5 gap-2">
+          {[2, 3, 4, 5, 7].map((n) => (
+            <button
+              key={n}
+              type="button"
+              onClick={() => {
+                updateSettings({ weeklyGoal: n });
+                void track("weekly_goal_set", { goal: n });
+              }}
+              aria-pressed={settings.weeklyGoal === n}
+              className={cn(
+                "rounded-xl border-2 min-h-[56px] font-semibold text-[1.1rem] focus-visible:outline focus-visible:outline-3",
+                settings.weeklyGoal === n
+                  ? "border-primary bg-success-surface"
+                  : "border-border-strong bg-surface",
+              )}
+            >
+              {n}
+            </button>
+          ))}
+        </div>
+        <p className="text-text-muted text-[0.9rem] mt-2">keer per week</p>
+      </Section>
+
       <Section title="Tekstgrootte">
         <div className="grid grid-cols-3 gap-2">
           {(["normaal", "groot", "extra-groot"] as const).map((t) => (

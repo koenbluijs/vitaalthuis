@@ -15,6 +15,7 @@ export type AppEvent =
   | "badge_unlocked"
   | "missed_day_returned"
   | "reminder_set"
+  | "weekly_goal_set"
   | "calendar_added"
   | "app_installed"
   | "session_feedback"

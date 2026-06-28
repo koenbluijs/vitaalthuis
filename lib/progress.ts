@@ -131,6 +131,56 @@ export function wasActiveToday(sessions: SessionRecord[], today = dateStr()): bo
   );
 }
 
+function weekStart(ref: Date): Date {
+  const x = new Date(ref);
+  const dow = (x.getDay() + 6) % 7; // maandag = 0
+  x.setHours(0, 0, 0, 0);
+  x.setDate(x.getDate() - dow);
+  return x;
+}
+
+function countActiveInWeek(active: Set<string>, start: Date): number {
+  let c = 0;
+  const cur = new Date(start);
+  for (let i = 0; i < 7; i++) {
+    if (active.has(dateStr(cur))) c += 1;
+    cur.setDate(cur.getDate() + 1);
+  }
+  return c;
+}
+
+/** Aantal actieve (beweeg)dagen in de huidige week (maandag t/m zondag). */
+export function activeDaysThisWeek(sessions: SessionRecord[], ref = new Date()): number {
+  return countActiveInWeek(activeDateSet(sessions), weekStart(ref));
+}
+
+/**
+ * Vergevende weekstreak: aantal weken op rij waarin het weekdoel is gehaald.
+ * De lopende week telt nog niet als "gemist" (je bent er nog mee bezig).
+ */
+export function weeklyStreak(
+  sessions: SessionRecord[],
+  goal: number,
+  ref = new Date(),
+): number {
+  if (goal <= 0) return 0;
+  const active = activeDateSet(sessions);
+  let streak = 0;
+  let isCurrent = true;
+  const cur = weekStart(ref);
+  for (let w = 0; w < 104; w++) {
+    const c = countActiveInWeek(active, cur);
+    if (c >= goal) {
+      streak += 1;
+    } else if (!isCurrent) {
+      break;
+    }
+    isCurrent = false;
+    cur.setDate(cur.getDate() - 7);
+  }
+  return streak;
+}
+
 /** Actieve dagen deze maand (kalendermaand), voor het maandoverzicht. */
 export function activeDaysThisMonth(sessions: SessionRecord[], ref = new Date()): number {
   const prefix = `${ref.getFullYear()}-${String(ref.getMonth() + 1).padStart(2, "0")}`;

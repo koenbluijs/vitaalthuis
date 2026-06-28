@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { useApp, useHydrated } from "@/lib/store";
 import { getDay, effectiveDayExercises } from "@/lib/data";
 import {
-  computeStreak,
   hasFinishedToday,
   wasActiveToday,
   activeInLastDays,
@@ -19,6 +18,7 @@ import { Screen } from "@/components/Screen";
 import { Button, ButtonLink, Card, Pill } from "@/components/ui";
 import { SafetyAlert } from "@/components/SafetyAlert";
 import { InstallHint } from "@/components/InstallHint";
+import { WeekProgress } from "@/components/WeekProgress";
 import { cn } from "@/lib/cn";
 
 export default function TodayPage() {
@@ -28,6 +28,7 @@ export default function TodayPage() {
   const level = useApp((s) => s.profile.level);
   const avoid = useApp((s) => s.profile.avoid);
   const anchor = useApp((s) => s.settings.habitAnchor);
+  const weeklyGoal = useApp((s) => s.settings.weeklyGoal);
   const progress = useApp((s) => s.progress);
   const startDay = useApp((s) => s.startDay);
   const confirmRest = useApp((s) => s.confirmRest);
@@ -42,7 +43,6 @@ export default function TodayPage() {
   const day = getDay(progress.currentDay);
   if (!day) return null;
 
-  const streak = computeStreak(progress.sessions);
   const finishedToday = hasFinishedToday(progress.sessions);
   const activeToday = wasActiveToday(progress.sessions);
   const exercises = effectiveDayExercises(day, avoid);
@@ -105,12 +105,9 @@ export default function TodayPage() {
         </div>
       </header>
 
-      {/* Streak, rustig en zelf-referentieel */}
-      <div className="mb-4 flex items-center gap-2 text-[1.05rem]">
-        <span aria-hidden className="text-2xl">🌿</span>
-        <span className="font-semibold">
-          {streak === 0 ? COPY.streak.zero : COPY.streak.label(streak)}
-        </span>
+      {/* Weekdoel + weekstreak, vergevend en zelfgekozen */}
+      <div className="mb-4">
+        <WeekProgress sessions={progress.sessions} goal={weeklyGoal} />
       </div>
 
       {showWelcomeBack && (

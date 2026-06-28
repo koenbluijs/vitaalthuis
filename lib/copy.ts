@@ -64,6 +64,17 @@ export const COPY = {
     zero: "Een kleine sessie telt ook. Begin gerust rustig.",
   },
 
+  week: {
+    label: (n: number, goal: number) => `Deze week: ${n} van de ${goal} keer bewogen`,
+    reached: "Je weekdoel is gehaald. Mooi! 🌿",
+    todayActive: "Je bent vandaag al in beweging geweest ✓",
+    streak: (n: number) =>
+      n === 1 ? "1 week op rij je doel gehaald" : `${n} weken op rij je doel gehaald`,
+    goalLabel: "Mijn weekdoel",
+    goalHint: "Hoe vaak wil je per week bewegen? Een paar keer is al goed.",
+    perWeek: (n: number) => `${n} keer per week`,
+  },
+
   missedDay: {
     title: "Fijn dat je er weer bent",
     body: "Geen probleem dat je een dag oversloeg. Vandaag pak je het weer rustig op.",
