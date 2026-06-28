@@ -41,3 +41,24 @@ export function dosageFor(
 ): string {
   return dosage[dosageKey(level)];
 }
+
+// Eerlijke tijdsinschatting: per oefening reken je instructie lezen + uitvoeren +
+// korte rust. Hoger niveau = meer sets = meer tijd. We tonen een kleine marge,
+// want het tempo verschilt per persoon (geen tijdsdruk).
+const MIN_PER_EXERCISE: Record<Level, number> = {
+  "Rustig starten": 1.4,
+  "Actief blijven": 1.9,
+  "Sterker worden": 2.4,
+};
+
+export function estimateMinutes(count: number, level: Level): { low: number; high: number } {
+  const mid = count * MIN_PER_EXERCISE[level];
+  const low = Math.max(3, Math.round(mid * 0.85));
+  const high = Math.max(low + 1, Math.round(mid * 1.2));
+  return { low, high };
+}
+
+export function formatMinutes(count: number, level: Level): string {
+  const { low, high } = estimateMinutes(count, level);
+  return `ongeveer ${low}–${high} minuten`;
+}

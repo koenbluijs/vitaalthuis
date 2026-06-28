@@ -29,6 +29,18 @@ export default function SessionPage() {
     else if (hydrated && !active && !done) router.replace("/vandaag");
   }, [hydrated, onboarded, active, done, router]);
 
+  // Start bij de oefening die vanaf het overzicht is aangetikt (?i=).
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search).get("i");
+    const n = p ? parseInt(p, 10) : NaN;
+    if (!Number.isNaN(n) && n > 0) setIdx(n);
+  }, []);
+
+  // Bij elke nieuwe oefening terug naar de bovenkant (fix: bleef halverwege staan).
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [idx]);
+
   if (!hydrated || !onboarded) return null;
   if (!active && !done) return null;
 
@@ -70,36 +82,43 @@ export default function SessionPage() {
 
   if (!day || !active) return null;
 
-  const ex = exercises[idx];
-  const isLast = idx >= exercises.length - 1;
+  const safeIdx = Math.min(Math.max(0, idx), Math.max(0, exercises.length - 1));
+  const ex = exercises[safeIdx];
+  if (!ex) return null;
+  const isLast = safeIdx >= exercises.length - 1;
   const doneThis = active.doneIds.includes(ex.id);
 
   return (
     <Screen>
       <div className="flex items-center justify-between mb-3">
         <ButtonLink href="/vandaag" variant="tertiary" size="md">
-          ← {COPY.exercise.notWell}
+          ← Terug naar overzicht
         </ButtonLink>
       </div>
 
       <ExerciseCard
+        key={ex.id}
         exercise={ex}
         level={level}
         done={doneThis}
         onToggleDone={() => toggleExercise(day.day, ex.id)}
-        index={idx + 1}
+        index={safeIdx + 1}
         total={exercises.length}
       />
 
       {doneThis && (
         <p className="text-center text-on-success-surface bg-success-surface rounded-xl p-2 mt-3">
-          {pick(COPY.exerciseDone, idx)}
+          {pick(COPY.exerciseDone, safeIdx)}
         </p>
       )}
 
       <div className="flex gap-3 mt-4">
-        {idx > 0 && (
-          <Button variant="secondary" onClick={() => setIdx((i) => i - 1)} className="flex-1">
+        {safeIdx > 0 && (
+          <Button
+            variant="secondary"
+            onClick={() => setIdx(safeIdx - 1)}
+            className="flex-1"
+          >
             ← Vorige
           </Button>
         )}
@@ -108,13 +127,19 @@ export default function SessionPage() {
             Dag afronden
           </Button>
         ) : (
-          <Button onClick={() => setIdx((i) => i + 1)} className="flex-1">
+          <Button onClick={() => setIdx(safeIdx + 1)} className="flex-1">
             {COPY.exercise.next} →
           </Button>
         )}
       </div>
 
-      <SafetyAlert variant="info" className="mt-5">
+      <p className="mt-3 text-center">
+        <ButtonLink href="/vandaag" variant="tertiary" size="md">
+          {COPY.exercise.notWell}
+        </ButtonLink>
+      </p>
+
+      <SafetyAlert variant="info" className="mt-4">
         {SAFETY.sessionReminder}
       </SafetyAlert>
     </Screen>

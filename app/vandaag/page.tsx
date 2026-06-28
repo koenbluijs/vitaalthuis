@@ -11,11 +11,13 @@ import {
   activeInLastDays,
   dateStr,
 } from "@/lib/progress";
+import { formatMinutes } from "@/lib/levels";
 import { COPY } from "@/lib/copy";
 import { SAFETY } from "@/lib/safety";
 import { Screen } from "@/components/Screen";
 import { Button, ButtonLink, Card, Pill } from "@/components/ui";
 import { SafetyAlert } from "@/components/SafetyAlert";
+import { cn } from "@/lib/cn";
 
 export default function TodayPage() {
   const hydrated = useHydrated();
@@ -26,6 +28,7 @@ export default function TodayPage() {
   const progress = useApp((s) => s.progress);
   const startDay = useApp((s) => s.startDay);
   const confirmRest = useApp((s) => s.confirmRest);
+  const finishDay = useApp((s) => s.finishDay);
 
   useEffect(() => {
     if (hydrated && !onboarded) router.replace("/");
@@ -54,9 +57,27 @@ export default function TodayPage() {
   const showWelcomeBack =
     progress.sessions.length > 0 && !activeToday && !activeYesterday && last7 === 0;
 
+  // Welke oefeningen van vandaag zijn al gedaan (voor de afvink-status in de lijst).
+  const todayStr = dateStr();
+  const todaySession = progress.sessions.find(
+    (s) => s.date === todayStr && s.day === day.day,
+  );
+  const doneIds = new Set<string>(
+    progress.active?.day === day.day
+      ? progress.active.doneIds
+      : todaySession?.doneIds ?? [],
+  );
+  const firstUndone = exercises.findIndex((e) => !doneIds.has(e.id));
+  const allDone = exercises.length > 0 && firstUndone === -1;
+
   function startSession() {
     startDay(day!.day);
     router.push("/vandaag/sessie");
+  }
+
+  function openExercise(i: number) {
+    startDay(day!.day);
+    router.push(`/vandaag/sessie?i=${i}`);
   }
 
   return (
@@ -122,40 +143,83 @@ export default function TodayPage() {
           <div className="p-5 pb-3">
             <p className="text-[1.15rem] font-semibold">{day.focus}</p>
             <p className="mt-1 text-text-muted">
-              {exercises.length} oefeningen · {COPY.dayStart.minutes(day.estimated_minutes)} ·
-              niveau {level}
+              {exercises.length} oefeningen · {formatMinutes(exercises.length, level)} · niveau{" "}
+              {level}
             </p>
           </div>
 
           <h2 className="px-5 text-[1.15rem] font-bold">Vandaag doe je:</h2>
           <ol className="p-5 pt-3 space-y-2.5">
-            {exercises.map((e, i) => (
-              <li
-                key={e.id}
-                className="flex items-start gap-3 rounded-xl bg-surface-2 p-3.5"
-              >
-                <span
-                  aria-hidden
-                  className="flex-shrink-0 grid place-items-center w-9 h-9 rounded-full bg-primary text-on-primary font-bold text-[1.1rem]"
-                >
-                  {i + 1}
-                </span>
-                <span className="min-w-0 pt-0.5">
-                  <span className="block font-semibold text-[1.1rem] leading-snug">
-                    {e.name}
-                  </span>
-                  <span className="block text-text-muted text-[0.95rem] leading-snug mt-0.5">
-                    {e.short_explanation}
-                  </span>
-                </span>
-              </li>
-            ))}
+            {exercises.map((e, i) => {
+              const done = doneIds.has(e.id);
+              return (
+                <li key={e.id}>
+                  <button
+                    type="button"
+                    onClick={() => openExercise(i)}
+                    className={cn(
+                      "w-full text-left flex items-start gap-3 rounded-xl p-3.5 min-h-[64px] border-2 transition-colors focus-visible:outline focus-visible:outline-3",
+                      done
+                        ? "bg-success-surface border-primary"
+                        : "bg-surface-2 border-transparent hover:bg-surface",
+                    )}
+                  >
+                    <span
+                      aria-hidden
+                      className={cn(
+                        "flex-shrink-0 grid place-items-center w-9 h-9 rounded-full font-bold text-[1.1rem]",
+                        done
+                          ? "bg-primary text-on-primary"
+                          : "bg-surface text-primary-strong border-2 border-primary",
+                      )}
+                    >
+                      {done ? "✓" : i + 1}
+                    </span>
+                    <span className="min-w-0 pt-0.5 flex-1">
+                      <span className="block font-semibold text-[1.1rem] leading-snug">
+                        {e.name}
+                      </span>
+                      <span
+                        className={cn(
+                          "block text-[0.95rem] leading-snug mt-0.5",
+                          done ? "text-primary-strong font-medium" : "text-text-muted",
+                        )}
+                      >
+                        {done ? "✓ Gedaan — tik om te herhalen" : e.short_explanation}
+                      </span>
+                    </span>
+                    <span aria-hidden className="text-text-muted text-2xl leading-none pt-1">
+                      ›
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
           </ol>
 
-          <div className="p-5 pt-0">
-            <Button full size="lg" onClick={startSession}>
-              {anchor ? COPY.dayStart.startWithAnchor(anchor) : COPY.dayStart.start}
-            </Button>
+          <div className="p-5 pt-0 space-y-2">
+            {allDone ? (
+              <Button full size="lg" onClick={() => finishDay(day.day)}>
+                Dag afronden
+              </Button>
+            ) : (
+              <Button
+                full
+                size="lg"
+                onClick={() => openExercise(firstUndone === -1 ? 0 : firstUndone)}
+              >
+                {doneIds.size > 0
+                  ? "Ga verder met de volgende"
+                  : anchor
+                    ? COPY.dayStart.startWithAnchor(anchor)
+                    : COPY.dayStart.start}
+              </Button>
+            )}
+            {doneIds.size > 0 && !allDone && (
+              <p className="text-center text-text-muted text-[0.9rem]">
+                {doneIds.size} van {exercises.length} gedaan
+              </p>
+            )}
           </div>
         </Card>
       )}
