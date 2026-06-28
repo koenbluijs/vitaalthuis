@@ -6,7 +6,7 @@ import { pullState, pushState, type Snapshot } from "@/lib/sync";
 import { useApp } from "@/lib/store";
 import { useSyncStore } from "@/lib/syncStore";
 
-const STAMP_KEY = "vt-sync-stamp";
+const STAMP_KEY = "vt-sync-stamp-v2";
 
 function snapshot(): Snapshot {
   const s = useApp.getState();

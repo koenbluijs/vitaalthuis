@@ -25,6 +25,7 @@ export default function TodayPage() {
   const hydrated = useHydrated();
   const router = useRouter();
   const onboarded = useApp((s) => s.profile.onboarded);
+  const name = useApp((s) => s.profile.name);
   const level = useApp((s) => s.profile.level);
   const avoid = useApp((s) => s.profile.avoid);
   const anchor = useApp((s) => s.settings.habitAnchor);
@@ -95,7 +96,7 @@ export default function TodayPage() {
     <Screen>
       <InstallHint />
       <header className="mb-5">
-        <p className="text-text-muted">{COPY.dayStart.greeting}</p>
+        <p className="text-text-muted">{COPY.dayStart.greeting(name)}</p>
         <h1 className="text-[1.8rem] font-bold leading-tight">
           {COPY.dayStart.todayPrefix}: dag {day.day} van 30
         </h1>

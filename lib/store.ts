@@ -11,6 +11,7 @@ import { evaluateBadges } from "./badges";
 export interface Profile {
   onboarded: boolean;
   safetyAck: boolean;
+  name: string;
   ageBand?: string;
   activity?: string;
   focus?: Focus;
@@ -45,6 +46,7 @@ interface AppState {
 
   acknowledgeSafety: () => void;
   completeOnboarding: (p: Partial<Profile>) => void;
+  setName: (name: string) => void;
   setLevel: (level: Level) => void;
   updateSettings: (s: Partial<Settings>) => void;
 
@@ -60,6 +62,7 @@ interface AppState {
 const initialProfile: Profile = {
   onboarded: false,
   safetyAck: false,
+  name: "",
   avoid: [],
   level: "Rustig starten",
 };
@@ -133,6 +136,8 @@ export const useApp = create<AppState>()(
 
       completeOnboarding: (p) =>
         set((s) => ({ profile: { ...s.profile, ...p, onboarded: true } })),
+
+      setName: (name) => set((s) => ({ profile: { ...s.profile, name } })),
 
       setLevel: (level) => set((s) => ({ profile: { ...s.profile, level } })),
 
@@ -269,7 +274,7 @@ export const useApp = create<AppState>()(
         })),
     }),
     {
-      name: "vitaal-thuis-v1",
+      name: "vitaal-thuis-v2",
       partialize: (s) => ({
         profile: s.profile,
         settings: s.settings,

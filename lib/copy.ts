@@ -15,7 +15,7 @@ export const COPY = {
   },
 
   dayStart: {
-    greeting: "Fijn dat je er bent",
+    greeting: (name?: string) => (name ? `Fijn dat je er bent, ${name}` : "Fijn dat je er bent"),
     todayPrefix: "Vandaag",
     start: "Start je oefeningen",
     startWithAnchor: (anchor: string) => `Klaar voor je momentje ${anchor}?`,
@@ -48,6 +48,7 @@ export const COPY = {
 
   dayDone: {
     title: "Klaar voor vandaag",
+    praise: (name?: string) => (name ? `Goed gedaan, ${name}!` : "Goed gedaan!"),
     body: "Mooi, je hebt je lichaam vandaag gebruikt. Daar gaat het om.",
     bodyPartial:
       "Goed bezig. Ook een paar oefeningen tellen mee — je bent er weer.",

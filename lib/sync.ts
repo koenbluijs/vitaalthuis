@@ -1,6 +1,7 @@
 "use client";
 
 import { getSupabase } from "./supabase";
+import { SCHEMA_VERSION } from "./version";
 import type { Profile, Settings, Progress } from "./store";
 
 // Local-first sync: we bewaren de hele app-state als één snapshot per gebruiker
@@ -23,8 +24,12 @@ export async function pullState(
     .eq("user_id", userId)
     .maybeSingle();
   if (error || !data || !data.state) return null;
+  const state = data.state as Snapshot & { schemaVersion?: number };
+  // Negeer cloud-data van een oudere versie (bewuste reset) -> opnieuw onboarden.
+  if (state.schemaVersion !== SCHEMA_VERSION) return null;
+  const { schemaVersion: _v, ...snapshot } = state;
   return {
-    snapshot: data.state as Snapshot,
+    snapshot: snapshot as Snapshot,
     updatedAt: new Date(data.updated_at as string).getTime(),
   };
 }
@@ -39,7 +44,7 @@ export async function pushState(
   const { error } = await sb.from("app_state").upsert(
     {
       user_id: userId,
-      state: snapshot,
+      state: { ...snapshot, schemaVersion: SCHEMA_VERSION },
       updated_at: new Date(updatedAtMs).toISOString(),
     },
     { onConflict: "user_id" },

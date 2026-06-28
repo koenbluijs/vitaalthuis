@@ -21,6 +21,8 @@ export default function SettingsPage() {
   const hydrated = useHydrated();
   const router = useRouter();
   const onboarded = useApp((s) => s.profile.onboarded);
+  const name = useApp((s) => s.profile.name);
+  const setName = useApp((s) => s.setName);
   const level = useApp((s) => s.profile.level);
   const settings = useApp((s) => s.settings);
   const setLevel = useApp((s) => s.setLevel);
@@ -85,6 +87,20 @@ export default function SettingsPage() {
   return (
     <Screen>
       <PageHeader title={COPY.nav.settings} />
+
+      <Section title="Je naam">
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Je voornaam"
+          autoComplete="given-name"
+          className="w-full rounded-xl border-2 border-border-strong bg-surface min-h-[56px] px-4 text-[1.05rem] focus-visible:outline focus-visible:outline-3"
+        />
+        <p className="text-text-muted text-[0.9rem] mt-2">
+          Zo spreekt de app je persoonlijk aan.
+        </p>
+      </Section>
 
       <Section title="Jouw niveau">
         <p className="text-text-muted mb-3">{COPY.level.changeBody}</p>

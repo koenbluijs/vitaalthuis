@@ -22,7 +22,7 @@ import { LEVELS } from "@/lib/levels";
 import { track } from "@/lib/analytics";
 import type { Level } from "@/lib/types";
 
-type Step = 0 | 1 | 2 | 3 | 4 | 5 | 6;
+type Step = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
 export default function OnboardingPage() {
   const router = useRouter();
@@ -31,12 +31,12 @@ export default function OnboardingPage() {
   const updateSettings = useApp((s) => s.updateSettings);
 
   const [step, setStep] = useState<Step>(0);
+  const [name, setName] = useState("");
   const [a, setA] = useState<OnboardingAnswers>({ avoid: [] });
   const [anchor, setAnchor] = useState<string>("");
-  const [reminder, setReminder] = useState(false);
   const [chosenLevel, setChosenLevel] = useState<Level | null>(null);
 
-  const next = () => setStep((s) => Math.min(6, s + 1) as Step);
+  const next = () => setStep((s) => Math.min(7, s + 1) as Step);
   const back = () => setStep((s) => Math.max(0, s - 1) as Step);
 
   function toggleAvoid(value: string) {
@@ -53,6 +53,7 @@ export default function OnboardingPage() {
 
   function finish(level: Level) {
     completeOnboarding({
+      name: name.trim(),
       ageBand: a.ageBand,
       activity: a.activity,
       focus: a.focus,
@@ -62,7 +63,6 @@ export default function OnboardingPage() {
     setLevel(level);
     updateSettings({
       habitAnchor: anchor && anchor !== "een eigen moment" ? anchor : "",
-      reminderEnabled: reminder,
     });
     void track("level_selected", { level });
     void track("onboarding_completed", { level, ageBand: a.ageBand, focus: a.focus });
@@ -72,13 +72,19 @@ export default function OnboardingPage() {
   const suggested = suggestLevel(a);
 
   const counter =
-    step <= 4 ? `Vraag ${step + 1} van 5` : step === 5 ? "Bijna klaar" : "Je startpunt";
+    step === 0
+      ? "Even kennismaken"
+      : step <= 5
+        ? `Vraag ${step} van 5`
+        : step === 6
+          ? "Bijna klaar"
+          : "Je startpunt";
 
   return (
     <Screen>
       <div className="mb-4 flex items-center justify-between">
         <p className="text-text-muted font-medium">{counter}</p>
-        {step > 0 && step < 6 && (
+        {step > 0 && step < 7 && (
           <button
             type="button"
             onClick={back}
@@ -90,6 +96,28 @@ export default function OnboardingPage() {
       </div>
 
       {step === 0 && (
+        <div className="vt-rise">
+          <h1 className="text-[1.6rem] font-bold leading-tight mb-1">
+            Welkom! Hoe mag ik je noemen?
+          </h1>
+          <p className="text-text-muted mb-4">
+            Je voornaam is genoeg. Zo maken we het wat persoonlijker. Mag ook leeg.
+          </p>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Je voornaam"
+            autoComplete="given-name"
+            className="w-full rounded-xl border-2 border-border-strong bg-surface min-h-[60px] px-4 text-[1.15rem] focus-visible:outline focus-visible:outline-3"
+          />
+          <Button full className="mt-5" onClick={next}>
+            {COPY.generic.next}
+          </Button>
+        </div>
+      )}
+
+      {step === 1 && (
         <Question title="Hoeveel beweeg je op dit moment?">
           {ACTIVITY_OPTIONS.map((o) => (
             <OptionButton
@@ -106,7 +134,7 @@ export default function OnboardingPage() {
         </Question>
       )}
 
-      {step === 1 && (
+      {step === 2 && (
         <Question title="Kun je zelfstandig opstaan uit een stoel?">
           {STAND_OPTIONS.map((o) => (
             <OptionButton
@@ -122,7 +150,7 @@ export default function OnboardingPage() {
         </Question>
       )}
 
-      {step === 2 && (
+      {step === 3 && (
         <Question title="Waar wil je vooral aan werken?">
           {FOCUS_OPTIONS.map((o) => (
             <OptionButton
@@ -139,7 +167,7 @@ export default function OnboardingPage() {
         </Question>
       )}
 
-      {step === 3 && (
+      {step === 4 && (
         <Question
           title="Zijn er bewegingen die je liever vermijdt?"
           subtitle="Je mag er meerdere kiezen. We houden er rekening mee."
@@ -158,7 +186,7 @@ export default function OnboardingPage() {
         </Question>
       )}
 
-      {step === 4 && (
+      {step === 5 && (
         <Question title="In welke leeftijdsgroep zit je?">
           {AGE_OPTIONS.map((o) => (
             <OptionButton
@@ -174,10 +202,10 @@ export default function OnboardingPage() {
         </Question>
       )}
 
-      {step === 5 && (
+      {step === 6 && (
         <Question
           title="Wanneer past jouw momentje het beste?"
-          subtitle="Koppel het aan iets wat je tóch al doet. Dat helpt het vol te houden."
+          subtitle="Koppel het aan iets wat je tóch al doet. Dan onthoud je het makkelijker — en de app spreekt je dan zo aan. Mag je overslaan."
         >
           {HABIT_ANCHORS.map((h) => (
             <OptionButton
@@ -187,23 +215,17 @@ export default function OnboardingPage() {
               onClick={() => setAnchor(h)}
             />
           ))}
-          <label className="flex items-center gap-3 mt-3 p-4 rounded-xl border-2 border-border-strong bg-surface min-h-[56px]">
-            <input
-              type="checkbox"
-              checked={reminder}
-              onChange={(e) => setReminder(e.target.checked)}
-              className="w-6 h-6 accent-[var(--color-primary)]"
-            />
-            <span>Geef me een rustige herinnering op dit moment</span>
-          </label>
+          <p className="text-text-muted text-[0.95rem] mt-1">
+            Een herinnering instellen kan straks in Instellingen.
+          </p>
           <Button full className="mt-3" onClick={next}>
             {COPY.generic.next}
           </Button>
         </Question>
       )}
 
-      {step === 6 && (
-        <div>
+      {step === 7 && (
+        <div className="vt-rise">
           <h1 className="text-[1.6rem] font-bold leading-tight mb-1">
             {COPY.level.suggested(suggested)}
           </h1>
@@ -230,7 +252,9 @@ export default function OnboardingPage() {
                   aria-pressed={isSel}
                   className={
                     "w-full text-left rounded-2xl border-2 p-5 focus-visible:outline focus-visible:outline-3 " +
-                    (isSel ? "border-primary bg-success-surface" : "border-border-strong bg-surface")
+                    (isSel
+                      ? "border-primary bg-success-surface"
+                      : "border-border-strong bg-surface")
                   }
                 >
                   <span className="block font-bold text-[1.15rem]">{l.id}</span>

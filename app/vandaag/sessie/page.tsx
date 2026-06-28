@@ -18,6 +18,7 @@ export default function SessionPage() {
   const hydrated = useHydrated();
   const router = useRouter();
   const onboarded = useApp((s) => s.profile.onboarded);
+  const name = useApp((s) => s.profile.name);
   const level = useApp((s) => s.profile.level);
   const avoid = useApp((s) => s.profile.avoid);
   const active = useApp((s) => s.progress.active);
@@ -70,7 +71,9 @@ export default function SessionPage() {
       <Screen className="flex flex-col">
         <div className="flex-1 flex flex-col justify-center text-center py-8 vt-rise">
           <div aria-hidden className="text-6xl mb-3">🌿</div>
-          <h1 className="text-[1.9rem] font-bold leading-tight">{COPY.dayDone.title}</h1>
+          <h1 className="text-[1.9rem] font-bold leading-tight">
+            {COPY.dayDone.praise(name)}
+          </h1>
           <p className="mt-3 text-[1.15rem]">
             {allDone ? COPY.dayDone.body : COPY.dayDone.bodyPartial}
           </p>
