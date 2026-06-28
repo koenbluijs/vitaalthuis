@@ -10,8 +10,13 @@ export function generateStaticParams() {
   return EXERCISES.map((e) => ({ id: e.id }));
 }
 
-export default function ExerciseDetailPage({ params }: { params: { id: string } }) {
-  const ex = getExercise(params.id);
+export default async function ExerciseDetailPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const ex = getExercise(id);
   if (!ex) notFound();
 
   return (
