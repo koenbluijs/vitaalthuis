@@ -1,0 +1,26 @@
+{
+  "name": "Vitaal Thuis",
+  "short_name": "Vitaal Thuis",
+  "description": "Blijf thuis sterk, soepel en in balans in 5 tot 10 minuten per dag.",
+  "lang": "nl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf6ef",
+  "theme_color": "#3e6b52",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

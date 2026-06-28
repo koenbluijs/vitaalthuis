@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Vitaal Thuis">
+  <rect width="512" height="512" fill="#3e6b52"/>
+  <g transform="translate(0,8)">
+    <path d="M256 392 V236" fill="none" stroke="#faf6ef" stroke-width="30" stroke-linecap="round"/>
+    <path d="M256 272 C256 204 204 166 144 166 C144 234 196 272 256 272 Z" fill="#8fc2a4" stroke="#faf6ef" stroke-width="18" stroke-linejoin="round"/>
+    <path d="M256 240 C256 184 300 152 352 152 C352 208 308 240 256 240 Z" fill="#faf6ef" stroke="#faf6ef" stroke-width="18" stroke-linejoin="round"/>
+  </g>
+</svg>

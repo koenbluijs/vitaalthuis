@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "generated": "2026-06-28",
+  "total_days": 30,
+  "days": [
+    {
+      "day": 1,
+      "week": 1,
+      "week_theme": "Wennen & vertrouwen",
+      "type": "Kracht basis",
+      "focus": "Stevig opstaan en zitten — de bouwsteen van zelfstandigheid.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "kuiten-heffen",
+        "boodschappentas-carry",
+        "bekkenkanteling",
+        "arm-cirkels",
+        "sit-to-stand-met-pauze"
+      ]
+    },
+    {
+      "day": 2,
+      "week": 1,
+      "week_theme": "Wennen & vertrouwen",
+      "type": "Balans basis",
+      "focus": "Rustig staan met steun, vertrouwen in je evenwicht.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "balans-met-stoelsteun-staan",
+        "eenbeenstand-met-steun",
+        "hak-teen-lopen-tandem",
+        "opstaan-uit-stoel",
+        "ademhaling-houding-reset"
+      ]
+    },
+    {
+      "day": 3,
+      "week": 1,
+      "week_theme": "Wennen & vertrouwen",
+      "type": "Mobiliteit",
+      "focus": "Soepel maken van heupen, schouders en nek.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "enkels-losdraaien-en-pompen",
+        "knie-heffen-hoog",
+        "bilspanning-glute-squeeze",
+        "borst-openen-tegen-muur",
+        "bird-dog-aangepast"
+      ]
+    },
+    {
+      "day": 4,
+      "week": 1,
+      "week_theme": "Wennen & vertrouwen",
+      "type": "Dagelijkse bewegingen",
+      "focus": "Reiken, draaien, bukken zoals in het echte leven.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "functioneel-bukken-en-reiken",
+        "iets-op-schap-hoogte-wegzetten",
+        "heupscharnier-hip-hinge",
+        "step-up-traptrede",
+        "deurpost-borststretch"
+      ]
+    },
+    {
+      "day": 5,
+      "week": 1,
+      "week_theme": "Wennen & vertrouwen",
+      "type": "Kracht basis",
+      "focus": "Benen en billen rustig versterken.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "gecontroleerd-zakken-uit-stand",
+        "iets-veilig-van-de-grond-tillen",
+        "staande-heup-abductie",
+        "handdoek-row",
+        "zittend-knie-strekken"
+      ]
+    },
+    {
+      "day": 6,
+      "week": 1,
+      "week_theme": "Wennen & vertrouwen",
+      "type": "Combinatie",
+      "focus": "Beetje balans, beetje kracht — alles even proeven.",
+      "is_rest": false,
+      "estimated_minutes": 9,
+      "exercise_ids": [
+        "marcheren-op-de-plek",
+        "kuiten-heffen",
+        "muur-opdrukken",
+        "staande-milde-rugextensie",
+        "tafel-plank",
+        "boodschappentas-carry"
+      ]
+    },
+    {
+      "day": 7,
+      "week": 1,
+      "week_theme": "Wennen & vertrouwen",
+      "type": "Herstel",
+      "focus": "Rustdag: korte terugblik en hoe het ging.",
+      "is_rest": true,
+      "estimated_minutes": 4,
+      "exercise_ids": [
+        "zittende-march",
+        "nek-rustig-draaien",
+        "schouderrollen"
+      ]
+    },
+    {
+      "day": 8,
+      "week": 2,
+      "week_theme": "Consistentie & controle",
+      "type": "Kracht basis",
+      "focus": "Opstaan met iets meer herhalingen, netjes uitgevoerd.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "sit-to-stand-met-pauze",
+        "functioneel-bukken-en-reiken",
+        "bekkenkanteling",
+        "wall-angels-aangepast",
+        "opstaan-uit-stoel"
+      ]
+    },
+    {
+      "day": 9,
+      "week": 2,
+      "week_theme": "Consistentie & controle",
+      "type": "Balans basis",
+      "focus": "Evenwicht met iets minder steun, gecontroleerd.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "zijwaarts-stappen",
+        "balans-met-stoelsteun-staan",
+        "eenbeenstand-met-steun",
+        "step-up-traptrede",
+        "ademhaling-houding-reset"
+      ]
+    },
+    {
+      "day": 10,
+      "week": 2,
+      "week_theme": "Consistentie & controle",
+      "type": "Dagelijkse bewegingen",
+      "focus": "Tillen en dragen zoals een boodschappentas.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "iets-op-schap-hoogte-wegzetten",
+        "iets-veilig-van-de-grond-tillen",
+        "bilspanning-glute-squeeze",
+        "gecontroleerd-zakken-uit-stand",
+        "zijwaartse-armheffing"
+      ]
+    },
+    {
+      "day": 11,
+      "week": 2,
+      "week_theme": "Consistentie & controle",
+      "type": "Mobiliteit",
+      "focus": "Onderrug en heupen losmaken.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "zittende-rompdraai",
+        "enkels-losdraaien-en-pompen",
+        "heupscharnier-hip-hinge",
+        "arm-cirkels",
+        "bird-dog-aangepast"
+      ]
+    },
+    {
+      "day": 12,
+      "week": 2,
+      "week_theme": "Consistentie & controle",
+      "type": "Kracht basis",
+      "focus": "Beenkracht en romp stabiel houden.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "zittend-knie-strekken",
+        "boodschappentas-carry",
+        "staande-heup-abductie",
+        "borst-openen-tegen-muur",
+        "kuiten-heffen"
+      ]
+    },
+    {
+      "day": 13,
+      "week": 2,
+      "week_theme": "Consistentie & controle",
+      "type": "Combinatie",
+      "focus": "Kracht en balans samen, rustig tempo.",
+      "is_rest": false,
+      "estimated_minutes": 9,
+      "exercise_ids": [
+        "hak-teen-lopen-tandem",
+        "sit-to-stand-met-pauze",
+        "deurpost-borststretch",
+        "staande-milde-rugextensie",
+        "tafel-plank",
+        "functioneel-bukken-en-reiken"
+      ]
+    },
+    {
+      "day": 14,
+      "week": 2,
+      "week_theme": "Consistentie & controle",
+      "type": "Herstel",
+      "focus": "Rustdag: voel je vooruitgang, vier de tweede week.",
+      "is_rest": true,
+      "estimated_minutes": 4,
+      "exercise_ids": [
+        "zittende-march",
+        "knie-heffen-hoog",
+        "nek-rustig-draaien"
+      ]
+    },
+    {
+      "day": 15,
+      "week": 3,
+      "week_theme": "Iets meer kracht/balans",
+      "type": "Kracht basis",
+      "focus": "Iets zwaardere beenoefeningen, meer herhalingen.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "opstaan-uit-stoel",
+        "iets-op-schap-hoogte-wegzetten",
+        "bekkenkanteling",
+        "handdoek-row",
+        "step-up-traptrede"
+      ]
+    },
+    {
+      "day": 16,
+      "week": 3,
+      "week_theme": "Iets meer kracht/balans",
+      "type": "Balans basis",
+      "focus": "Langer staan, minder vasthouden (steun binnen handbereik).",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "marcheren-op-de-plek",
+        "zijwaarts-stappen",
+        "balans-met-stoelsteun-staan",
+        "gecontroleerd-zakken-uit-stand",
+        "ademhaling-houding-reset"
+      ]
+    },
+    {
+      "day": 17,
+      "week": 3,
+      "week_theme": "Iets meer kracht/balans",
+      "type": "Combinatie",
+      "focus": "Romp en houding versterken.",
+      "is_rest": false,
+      "estimated_minutes": 9,
+      "exercise_ids": [
+        "eenbeenstand-met-steun",
+        "zittend-knie-strekken",
+        "muur-opdrukken",
+        "bilspanning-glute-squeeze",
+        "bird-dog-aangepast",
+        "iets-veilig-van-de-grond-tillen"
+      ]
+    },
+    {
+      "day": 18,
+      "week": 3,
+      "week_theme": "Iets meer kracht/balans",
+      "type": "Mobiliteit",
+      "focus": "Soepel blijven na de zwaardere dagen.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "schouderrollen",
+        "zittende-rompdraai",
+        "heupscharnier-hip-hinge",
+        "wall-angels-aangepast",
+        "tafel-plank"
+      ]
+    },
+    {
+      "day": 19,
+      "week": 3,
+      "week_theme": "Iets meer kracht/balans",
+      "type": "Kracht basis",
+      "focus": "Opstaan en stappen, functionele kracht.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "kuiten-heffen",
+        "boodschappentas-carry",
+        "staande-heup-abductie",
+        "zijwaartse-armheffing",
+        "sit-to-stand-met-pauze"
+      ]
+    },
+    {
+      "day": 20,
+      "week": 3,
+      "week_theme": "Iets meer kracht/balans",
+      "type": "Combinatie",
+      "focus": "Balans en kracht uitdagender combineren.",
+      "is_rest": false,
+      "estimated_minutes": 9,
+      "exercise_ids": [
+        "hak-teen-lopen-tandem",
+        "opstaan-uit-stoel",
+        "arm-cirkels",
+        "staande-milde-rugextensie",
+        "zittende-march",
+        "functioneel-bukken-en-reiken"
+      ]
+    },
+    {
+      "day": 21,
+      "week": 3,
+      "week_theme": "Iets meer kracht/balans",
+      "type": "Herstel",
+      "focus": "Rustdag: terugblik en bijstellen van je niveau indien gewenst.",
+      "is_rest": true,
+      "estimated_minutes": 4,
+      "exercise_ids": [
+        "ademhaling-houding-reset",
+        "enkels-losdraaien-en-pompen",
+        "knie-heffen-hoog"
+      ]
+    },
+    {
+      "day": 22,
+      "week": 4,
+      "week_theme": "Combineren & zelfvertrouwen",
+      "type": "Combinatie",
+      "focus": "Kracht en balans vloeiend achter elkaar.",
+      "is_rest": false,
+      "estimated_minutes": 9,
+      "exercise_ids": [
+        "marcheren-op-de-plek",
+        "step-up-traptrede",
+        "borst-openen-tegen-muur",
+        "bekkenkanteling",
+        "bird-dog-aangepast",
+        "iets-op-schap-hoogte-wegzetten"
+      ]
+    },
+    {
+      "day": 23,
+      "week": 4,
+      "week_theme": "Combineren & zelfvertrouwen",
+      "type": "Balans basis",
+      "focus": "Vertrouwen in je evenwicht, ook bij draaien.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "zijwaarts-stappen",
+        "balans-met-stoelsteun-staan",
+        "eenbeenstand-met-steun",
+        "gecontroleerd-zakken-uit-stand",
+        "tafel-plank"
+      ]
+    },
+    {
+      "day": 24,
+      "week": 4,
+      "week_theme": "Combineren & zelfvertrouwen",
+      "type": "Dagelijkse bewegingen",
+      "focus": "Alledaagse handelingen vlot en veilig.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "iets-veilig-van-de-grond-tillen",
+        "boodschappentas-carry",
+        "bilspanning-glute-squeeze",
+        "zittend-knie-strekken",
+        "deurpost-borststretch"
+      ]
+    },
+    {
+      "day": 25,
+      "week": 4,
+      "week_theme": "Combineren & zelfvertrouwen",
+      "type": "Kracht basis",
+      "focus": "Sterke benen voor traplopen en opstaan.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "kuiten-heffen",
+        "functioneel-bukken-en-reiken",
+        "heupscharnier-hip-hinge",
+        "handdoek-row",
+        "sit-to-stand-met-pauze"
+      ]
+    },
+    {
+      "day": 26,
+      "week": 4,
+      "week_theme": "Combineren & zelfvertrouwen",
+      "type": "Mobiliteit",
+      "focus": "Soepel en ontspannen bewegen.",
+      "is_rest": false,
+      "estimated_minutes": 8,
+      "exercise_ids": [
+        "nek-rustig-draaien",
+        "schouderrollen",
+        "staande-heup-abductie",
+        "muur-opdrukken",
+        "zittende-march"
+      ]
+    },
+    {
+      "day": 27,
+      "week": 4,
+      "week_theme": "Combineren & zelfvertrouwen",
+      "type": "Combinatie",
+      "focus": "Alles samen — merk hoeveel je kunt.",
+      "is_rest": false,
+      "estimated_minutes": 9,
+      "exercise_ids": [
+        "hak-teen-lopen-tandem",
+        "opstaan-uit-stoel",
+        "wall-angels-aangepast",
+        "staande-milde-rugextensie",
+        "ademhaling-houding-reset",
+        "iets-op-schap-hoogte-wegzetten"
+      ]
+    },
+    {
+      "day": 28,
+      "week": 4,
+      "week_theme": "Combineren & zelfvertrouwen",
+      "type": "Herstel",
+      "focus": "Rustdag: terugblik op de hele maand.",
+      "is_rest": true,
+      "estimated_minutes": 4,
+      "exercise_ids": [
+        "bird-dog-aangepast",
+        "zittende-rompdraai",
+        "enkels-losdraaien-en-pompen"
+      ]
+    },
+    {
+      "day": 29,
+      "week": 5,
+      "week_theme": "Afronding",
+      "type": "Combinatie (licht)",
+      "focus": "Je favoriete oefeningen nog eens, op je eigen niveau.",
+      "is_rest": false,
+      "estimated_minutes": 6,
+      "exercise_ids": [
+        "marcheren-op-de-plek",
+        "step-up-traptrede",
+        "knie-heffen-hoog",
+        "tafel-plank"
+      ]
+    },
+    {
+      "day": 30,
+      "week": 5,
+      "week_theme": "Afronding",
+      "type": "Herstel",
+      "focus": "Vieren: je hebt 30 dagen volgehouden. Vooruitblik naar de volgende ronde.",
+      "is_rest": true,
+      "estimated_minutes": 4,
+      "exercise_ids": [
+        "zittende-march",
+        "nek-rustig-draaien",
+        "schouderrollen"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens (Fase 4). Contrast deterministisch geverifieerd: scripts/check-contrast.py */
+:root {
+  --color-bg: #faf6ef;
+  --color-surface: #ffffff;
+  --color-surface-2: #f2ece0;
+  --color-text: #2b2a26;
+  --color-text-muted: #5c594f;
+  --color-border: #d9d2c4;
+  --color-border-strong: #8c8678;
+  --color-focus: #2f5a43;
+  --color-primary: #3e6b52;
+  --color-primary-strong: #2f5a43;
+  --color-on-primary: #ffffff;
+  --color-accent: #b25a33;
+  --color-accent-text: #9a4a2a;
+  --color-on-accent: #ffffff;
+  --color-info: #2e6b80;
+  --color-info-surface: #e3eef1;
+  --color-on-info-surface: #1f4e5f;
+  --color-caution: #8a5a12;
+  --color-caution-surface: #fbefd6;
+  --color-on-caution-surface: #6e4a12;
+  --color-stop: #a6342b;
+  --color-stop-surface: #fbe3e0;
+  --color-on-stop-surface: #8a2620;
+  --color-on-stop: #ffffff;
+  --color-success: #2f6b3d;
+  --color-success-surface: #e2f0e4;
+  --color-on-success-surface: #2a5a33;
+}
+
+.dark {
+  --color-bg: #1b1a17;
+  --color-surface: #26241f;
+  --color-surface-2: #302d27;
+  --color-text: #ece7dd;
+  --color-text-muted: #b0a99c;
+  --color-border: #3a372f;
+  --color-border-strong: #736e63;
+  --color-focus: #8fc2a4;
+  --color-primary: #8fc2a4;
+  --color-primary-strong: #a6d2b6;
+  --color-on-primary: #10241a;
+  --color-accent: #e0996b;
+  --color-accent-text: #e0996b;
+  --color-on-accent: #2a1408;
+  --color-info: #7fc0d2;
+  --color-info-surface: #15323b;
+  --color-on-info-surface: #a9d6e4;
+  --color-caution: #e6b85a;
+  --color-caution-surface: #3a2c0e;
+  --color-on-caution-surface: #f0cf8e;
+  --color-stop: #e89189;
+  --color-stop-surface: #3a1512;
+  --color-on-stop-surface: #f2b3ab;
+  --color-on-stop: #2a0907;
+  --color-success: #7fc58c;
+  --color-success-surface: #13301a;
+  --color-on-success-surface: #a8d9b0;
+}
+
+/* "Meer contrast"-modus: donkerdere tekst, sterkere randen. */
+.contrast-more {
+  --color-text: #1a1916;
+  --color-text-muted: #3f3d36;
+  --color-border: var(--color-border-strong);
+}
+.dark.contrast-more {
+  --color-text: #fbf8f1;
+  --color-text-muted: #d6cfc1;
+  --color-border: var(--color-border-strong);
+}
+
+html {
+  font-size: 16px; /* wordt door de tekstgrootte-instelling overschreven */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 1.125rem; /* 18px basis */
+  line-height: 1.6;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Duidelijke, zichtbare focus voor toetsenbord/screenreader. */
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Rustige bewegingen; respecteer prefers-reduced-motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes vt-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.vt-rise {
+  animation: vt-rise 240ms ease-out both;
+}
