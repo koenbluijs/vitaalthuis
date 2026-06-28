@@ -118,26 +118,45 @@ export default function TodayPage() {
           </div>
         </Card>
       ) : (
-        <Card>
-          <p className="text-text-muted">{day.focus}</p>
-          <p className="mt-2 text-[1.1rem]">
-            <span className="font-semibold">{exercises.length} oefeningen</span> ·{" "}
-            {COPY.dayStart.minutes(day.estimated_minutes)}
-          </p>
-          <ul className="mt-3 space-y-1 text-text-muted">
-            {exercises.map((e) => (
-              <li key={e.id} className="flex gap-2">
-                <span aria-hidden>•</span>
-                <span>{e.name}</span>
+        <Card className="p-0 overflow-hidden">
+          <div className="p-5 pb-3">
+            <p className="text-[1.15rem] font-semibold">{day.focus}</p>
+            <p className="mt-1 text-text-muted">
+              {exercises.length} oefeningen · {COPY.dayStart.minutes(day.estimated_minutes)} ·
+              niveau {level}
+            </p>
+          </div>
+
+          <h2 className="px-5 text-[1.15rem] font-bold">Vandaag doe je:</h2>
+          <ol className="p-5 pt-3 space-y-2.5">
+            {exercises.map((e, i) => (
+              <li
+                key={e.id}
+                className="flex items-start gap-3 rounded-xl bg-surface-2 p-3.5"
+              >
+                <span
+                  aria-hidden
+                  className="flex-shrink-0 grid place-items-center w-9 h-9 rounded-full bg-primary text-on-primary font-bold text-[1.1rem]"
+                >
+                  {i + 1}
+                </span>
+                <span className="min-w-0 pt-0.5">
+                  <span className="block font-semibold text-[1.1rem] leading-snug">
+                    {e.name}
+                  </span>
+                  <span className="block text-text-muted text-[0.95rem] leading-snug mt-0.5">
+                    {e.short_explanation}
+                  </span>
+                </span>
               </li>
             ))}
-          </ul>
-          <Button full className="mt-5" onClick={startSession}>
-            {anchor ? COPY.dayStart.startWithAnchor(anchor) : COPY.dayStart.start}
-          </Button>
-          <p className="mt-2 text-center text-text-muted text-[0.9rem]">
-            Niveau: {level}
-          </p>
+          </ol>
+
+          <div className="p-5 pt-0">
+            <Button full size="lg" onClick={startSession}>
+              {anchor ? COPY.dayStart.startWithAnchor(anchor) : COPY.dayStart.start}
+            </Button>
+          </div>
         </Card>
       )}
 
