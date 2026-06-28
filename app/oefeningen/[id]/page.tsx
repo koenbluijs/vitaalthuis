@@ -4,7 +4,7 @@ import { EXERCISES, getExercise } from "@/lib/data";
 import { Screen } from "@/components/Screen";
 import { Pill } from "@/components/ui";
 import { SafetyAlert } from "@/components/SafetyAlert";
-import { MediaPlaceholder } from "@/components/ExerciseCard";
+import { MovementArt } from "@/components/MovementArt";
 
 export function generateStaticParams() {
   return EXERCISES.map((e) => ({ id: e.id }));
@@ -37,7 +37,7 @@ export default async function ExerciseDetailPage({
       </div>
 
       <div className="mb-4">
-        <MediaPlaceholder text={ex.media_placeholder} />
+        <MovementArt motion={ex.motion} name={ex.name} />
       </div>
 
       <p className="text-[1.05rem]">{ex.short_explanation}</p>

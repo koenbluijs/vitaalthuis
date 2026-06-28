@@ -6,20 +6,8 @@ import { dosageFor } from "@/lib/levels";
 import { COPY } from "@/lib/copy";
 import { Button } from "./ui";
 import { SafetyAlert } from "./SafetyAlert";
+import { MovementArt } from "./MovementArt";
 import { cn } from "@/lib/cn";
-
-export function MediaPlaceholder({ text }: { text: string }) {
-  return (
-    <div className="rounded-xl bg-surface-2 border border-border aspect-video grid place-items-center text-center p-4">
-      <div>
-        <div aria-hidden className="text-3xl mb-1">
-          🎬
-        </div>
-        <p className="text-text-muted text-[0.95rem]">{text}</p>
-      </div>
-    </div>
-  );
-}
 
 export function ExerciseCard({
   exercise,
@@ -47,7 +35,7 @@ export function ExerciseCard({
         </p>
         <h2 className="text-[1.5rem] font-bold leading-tight">{exercise.name}</h2>
 
-        <MediaPlaceholder text={exercise.media_placeholder} />
+        <MovementArt motion={exercise.motion} name={exercise.name} />
 
         <p className="text-[1.05rem]">{exercise.short_explanation}</p>
 

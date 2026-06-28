@@ -37,7 +37,21 @@ export interface Exercise {
   support_needed: string;
   equipment: string;
   media_placeholder: string;
+  motion: MotionType;
+  tags: string[];
 }
+
+export type MotionType =
+  | "stand"
+  | "sit-to-stand"
+  | "seated"
+  | "balance"
+  | "hinge"
+  | "arm"
+  | "wall"
+  | "floor"
+  | "heel-raise"
+  | "carry";
 
 export interface ProgramDay {
   day: number;

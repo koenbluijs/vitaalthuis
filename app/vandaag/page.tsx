@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useApp, useHydrated } from "@/lib/store";
-import { getDay, dayExercises } from "@/lib/data";
+import { getDay, effectiveDayExercises } from "@/lib/data";
 import {
   computeStreak,
   hasFinishedToday,
@@ -24,6 +24,7 @@ export default function TodayPage() {
   const router = useRouter();
   const onboarded = useApp((s) => s.profile.onboarded);
   const level = useApp((s) => s.profile.level);
+  const avoid = useApp((s) => s.profile.avoid);
   const anchor = useApp((s) => s.settings.habitAnchor);
   const progress = useApp((s) => s.progress);
   const startDay = useApp((s) => s.startDay);
@@ -42,7 +43,7 @@ export default function TodayPage() {
   const streak = computeStreak(progress.sessions);
   const finishedToday = hasFinishedToday(progress.sessions);
   const activeToday = wasActiveToday(progress.sessions);
-  const exercises = dayExercises(day);
+  const exercises = effectiveDayExercises(day, avoid);
 
   // Vergevende "welkom terug" als er een gat zit (niet actief gisteren of vandaag).
   const last7 = activeInLastDays(progress.sessions, 7);

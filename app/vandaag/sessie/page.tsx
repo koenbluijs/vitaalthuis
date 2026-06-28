@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useApp, useHydrated } from "@/lib/store";
-import { getDay, dayExercises } from "@/lib/data";
+import { getDay, effectiveDayExercises } from "@/lib/data";
 import { COPY, pick } from "@/lib/copy";
 import { SAFETY } from "@/lib/safety";
 import { Screen } from "@/components/Screen";
@@ -16,6 +16,7 @@ export default function SessionPage() {
   const router = useRouter();
   const onboarded = useApp((s) => s.profile.onboarded);
   const level = useApp((s) => s.profile.level);
+  const avoid = useApp((s) => s.profile.avoid);
   const active = useApp((s) => s.progress.active);
   const toggleExercise = useApp((s) => s.toggleExercise);
   const finishDay = useApp((s) => s.finishDay);
@@ -45,7 +46,7 @@ export default function SessionPage() {
   if (!active && !done) return null;
 
   const day = active ? getDay(active.day) : null;
-  const exercises = day ? dayExercises(day) : [];
+  const exercises = day ? effectiveDayExercises(day, avoid) : [];
 
   function finish() {
     if (!active) return;

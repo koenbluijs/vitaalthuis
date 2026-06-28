@@ -46,7 +46,9 @@
       ],
       "support_needed": "Stevige stoel, aanrecht of muur binnen handbereik",
       "equipment": "Stevige stoel of aanrecht",
-      "media_placeholder": "Rustige video van iemand 60+ die bij het aanrecht op de tenen omhoog komt en langzaam terugzakt, handen licht op het aanrecht als steun."
+      "media_placeholder": "Rustige video van iemand 60+ die bij het aanrecht op de tenen omhoog komt en langzaam terugzakt, handen licht op het aanrecht als steun.",
+      "motion": "heel-raise",
+      "tags": []
     },
     {
       "id": "sit-to-stand-met-pauze",
@@ -83,7 +85,9 @@
       ],
       "support_needed": "Stevige stoel, eventueel leuning of aanrecht binnen handbereik",
       "equipment": "Stevige stoel",
-      "media_placeholder": "Illustratie of video van iemand 60+ die halverwege het opstaan even stilhoudt in een halve stand met rechte rug, rustige uitdrukking, steun zichtbaar binnen handbereik."
+      "media_placeholder": "Illustratie of video van iemand 60+ die halverwege het opstaan even stilhoudt in een halve stand met rechte rug, rustige uitdrukking, steun zichtbaar binnen handbereik.",
+      "motion": "sit-to-stand",
+      "tags": []
     },
     {
       "id": "opstaan-uit-stoel",
@@ -120,7 +124,9 @@
       ],
       "support_needed": "Stevige stoel; met armleuningen of met de muur erachter geeft extra zekerheid",
       "equipment": "Stevige stoel",
-      "media_placeholder": "Rustige illustratie of korte video van iemand 60+ die opstaat van een stevige stoel met armleuningen, lichte voorwaartse buiging vanuit de heupen met rechte rug, voeten goed onder de knieen."
+      "media_placeholder": "Rustige illustratie of korte video van iemand 60+ die opstaat van een stevige stoel met armleuningen, lichte voorwaartse buiging vanuit de heupen met rechte rug, voeten goed onder de knieen.",
+      "motion": "sit-to-stand",
+      "tags": []
     },
     {
       "id": "step-up-traptrede",
@@ -157,7 +163,9 @@
       ],
       "support_needed": "Trapleuning of muur binnen handbereik",
       "equipment": "Onderste traptrede of een stevig laag opstapje",
-      "media_placeholder": "Rustige video van iemand 60+ die met de hele voet op een lage traptrede stapt, een hand aan de leuning, blik vooruit, beheerste beweging omhoog en omlaag."
+      "media_placeholder": "Rustige video van iemand 60+ die met de hele voet op een lage traptrede stapt, een hand aan de leuning, blik vooruit, beheerste beweging omhoog en omlaag.",
+      "motion": "balance",
+      "tags": []
     },
     {
       "id": "gecontroleerd-zakken-uit-stand",
@@ -193,7 +201,9 @@
       ],
       "support_needed": "Stevige stoel direct achter je; leuning of aanrecht binnen handbereik voor steun",
       "equipment": "Stevige stoel",
-      "media_placeholder": "Rustige video van iemand 60+ die vanuit stand heel langzaam in een stevige stoel zakt, heupen naar achteren met rechte rug, stoel duidelijk vlak achter de hielen, een hand bij de leuning als steun."
+      "media_placeholder": "Rustige video van iemand 60+ die vanuit stand heel langzaam in een stevige stoel zakt, heupen naar achteren met rechte rug, stoel duidelijk vlak achter de hielen, een hand bij de leuning als steun.",
+      "motion": "sit-to-stand",
+      "tags": []
     },
     {
       "id": "zittend-knie-strekken",
@@ -228,7 +238,9 @@
       ],
       "support_needed": "Stevige stoel om op te zitten",
       "equipment": "Stevige stoel, eventueel een lichte boodschappentas",
-      "media_placeholder": "Illustratie of video van iemand 60+ die rechtop op een stoel zit en rustig een been recht voor zich uit strekt, optioneel een lichte tas over de enkel."
+      "media_placeholder": "Illustratie of video van iemand 60+ die rechtop op een stoel zit en rustig een been recht voor zich uit strekt, optioneel een lichte tas over de enkel.",
+      "motion": "seated",
+      "tags": []
     },
     {
       "id": "balans-met-stoelsteun-staan",
@@ -266,7 +278,9 @@
       ],
       "support_needed": "Stevige stoel of aanrecht",
       "equipment": "Stevige stoel",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop naast een aanrecht staat, een hand licht op de rand, voeten bij elkaar, kalme houding, steun duidelijk binnen handbereik."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop naast een aanrecht staat, een hand licht op de rand, voeten bij elkaar, kalme houding, steun duidelijk binnen handbereik.",
+      "motion": "balance",
+      "tags": []
     },
     {
       "id": "eenbeenstand-met-steun",
@@ -305,7 +319,11 @@
       ],
       "support_needed": "Aanrecht of stevige stoel binnen handbereik",
       "equipment": "Stevige stoel of aanrecht",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die op een been staat naast een aanrecht, een hand op de rand, andere voet net van de vloer, rechtop en rustig, steun duidelijk binnen handbereik."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die op een been staat naast een aanrecht, een hand op de rand, andere voet net van de vloer, rechtop en rustig, steun duidelijk binnen handbereik.",
+      "motion": "balance",
+      "tags": [
+        "een-been"
+      ]
     },
     {
       "id": "hak-teen-lopen-tandem",
@@ -343,7 +361,9 @@
       ],
       "support_needed": "Aanrecht of lange muur binnen handbereik",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die langzaam hak-tegen-teen langs een aanrecht loopt, een hand er vlak boven zwevend, blik rustig vooruit, stroeve vloer zonder kleedjes."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die langzaam hak-tegen-teen langs een aanrecht loopt, een hand er vlak boven zwevend, blik rustig vooruit, stroeve vloer zonder kleedjes.",
+      "motion": "balance",
+      "tags": []
     },
     {
       "id": "marcheren-op-de-plek",
@@ -382,7 +402,9 @@
       ],
       "support_needed": "Stevige stoel of aanrecht",
       "equipment": "Stevige stoel",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die op de plek marcheert naast een stoel, een hand op de rugleuning, een knie rustig opgetild, rechtop en kalm."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die op de plek marcheert naast een stoel, een hand op de rugleuning, een knie rustig opgetild, rechtop en kalm.",
+      "motion": "balance",
+      "tags": []
     },
     {
       "id": "zijwaarts-stappen",
@@ -420,7 +442,9 @@
       ],
       "support_needed": "Aanrecht of lange muur binnen handbereik",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die zijwaarts langs een aanrecht stapt, een hand op de rand, rechtop, blik vooruit, vrije en stroeve vloer."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die zijwaarts langs een aanrecht stapt, een hand op de rand, rechtop, blik vooruit, vrije en stroeve vloer.",
+      "motion": "balance",
+      "tags": []
     },
     {
       "id": "bekkenkanteling",
@@ -457,7 +481,11 @@
       ],
       "support_needed": "Geen (stoel of matje naar wens)",
       "equipment": "Geen; eventueel een matje voor comfort",
-      "media_placeholder": "Rustige illustratie van iemand op de rug met gebogen knieën die het bekken zacht heen en weer kantelt, met een subtiele pijl die de beweging toont."
+      "media_placeholder": "Rustige illustratie van iemand op de rug met gebogen knieën die het bekken zacht heen en weer kantelt, met een subtiele pijl die de beweging toont.",
+      "motion": "floor",
+      "tags": [
+        "grond-liggen"
+      ]
     },
     {
       "id": "bilspanning-glute-squeeze",
@@ -492,7 +520,9 @@
       ],
       "support_needed": "Geen (eventueel een stoel om op te zitten; aanrecht binnen handbereik bij de staande variant op één been)",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van iemand die rechtop staat of zit en de bilspieren aanspant, met een klein animatie-accent op de bilstreek."
+      "media_placeholder": "Rustige illustratie van iemand die rechtop staat of zit en de bilspieren aanspant, met een klein animatie-accent op de bilstreek.",
+      "motion": "stand",
+      "tags": []
     },
     {
       "id": "heupscharnier-hip-hinge",
@@ -529,7 +559,11 @@
       ],
       "support_needed": "Stevige stoel of aanrecht (bij Rustig starten of bij twijfel over je balans)",
       "equipment": "Geen; eventueel een lichte boodschappentas (niet bij osteoporose)",
-      "media_placeholder": "Rustige zijaanzicht-illustratie van iemand die vanuit de heupen voorover scharniert met een rechte rug, een hand binnen handbereik van een aanrecht."
+      "media_placeholder": "Rustige zijaanzicht-illustratie van iemand die vanuit de heupen voorover scharniert met een rechte rug, een hand binnen handbereik van een aanrecht.",
+      "motion": "hinge",
+      "tags": [
+        "diep-bukken"
+      ]
     },
     {
       "id": "staande-heup-abductie",
@@ -566,7 +600,11 @@
       ],
       "support_needed": "Stevige stoel of aanrecht (altijd binnen handbereik)",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van iemand die naast een aanrecht staat, één hand aan de rand, en het andere been licht gestrekt opzij tilt."
+      "media_placeholder": "Rustige illustratie van iemand die naast een aanrecht staat, één hand aan de rand, en het andere been licht gestrekt opzij tilt.",
+      "motion": "balance",
+      "tags": [
+        "een-been"
+      ]
     },
     {
       "id": "staande-milde-rugextensie",
@@ -603,7 +641,9 @@
       ],
       "support_needed": "Geen (aanrecht binnen handbereik bij twijfel over je balans of bij duizeligheid)",
       "equipment": "Geen",
-      "media_placeholder": "Rustige zijaanzicht-illustratie van iemand die rechtop staat met handen op de onderrug en heel licht achterover leunt."
+      "media_placeholder": "Rustige zijaanzicht-illustratie van iemand die rechtop staat met handen op de onderrug en heel licht achterover leunt.",
+      "motion": "stand",
+      "tags": []
     },
     {
       "id": "arm-cirkels",
@@ -640,7 +680,9 @@
       ],
       "support_needed": "Geen",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die staand met gestrekte armen zijwaarts kleine cirkels maakt, ontspannen schouders, neutrale achtergrond."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die staand met gestrekte armen zijwaarts kleine cirkels maakt, ontspannen schouders, neutrale achtergrond.",
+      "motion": "arm",
+      "tags": []
     },
     {
       "id": "borst-openen-tegen-muur",
@@ -676,7 +718,9 @@
       ],
       "support_needed": "Stevige muur",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon zijwaarts bij een muur met onderarm tegen de muur, lijf licht weggedraaid, ontspannen gezicht."
+      "media_placeholder": "Rustige illustratie van een oudere persoon zijwaarts bij een muur met onderarm tegen de muur, lijf licht weggedraaid, ontspannen gezicht.",
+      "motion": "wall",
+      "tags": []
     },
     {
       "id": "deurpost-borststretch",
@@ -712,7 +756,9 @@
       ],
       "support_needed": "Deurpost",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon in een deuropening met onderarmen tegen de deurposten, één voet voor, zacht naar voren leunend."
+      "media_placeholder": "Rustige illustratie van een oudere persoon in een deuropening met onderarmen tegen de deurposten, één voet voor, zacht naar voren leunend.",
+      "motion": "wall",
+      "tags": []
     },
     {
       "id": "handdoek-row",
@@ -749,7 +795,9 @@
       ],
       "support_needed": "Geen",
       "equipment": "Handdoek",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die zittend een handdoek voor zich strak trekt, schouderbladen samengeknepen, kalme huiskameromgeving."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die zittend een handdoek voor zich strak trekt, schouderbladen samengeknepen, kalme huiskameromgeving.",
+      "motion": "arm",
+      "tags": []
     },
     {
       "id": "muur-opdrukken",
@@ -786,7 +834,9 @@
       ],
       "support_needed": "Stevige muur",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop tegen een stevige muur staat met handen op schouderhoogte, lijf recht, in een lichte huiskamer."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop tegen een stevige muur staat met handen op schouderhoogte, lijf recht, in een lichte huiskamer.",
+      "motion": "wall",
+      "tags": []
     },
     {
       "id": "wall-angels-aangepast",
@@ -823,7 +873,9 @@
       ],
       "support_needed": "Muur",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon met rug tegen de muur, armen tegen de muur in een 'handen omhoog'-stand, knieën licht gebogen."
+      "media_placeholder": "Rustige illustratie van een oudere persoon met rug tegen de muur, armen tegen de muur in een 'handen omhoog'-stand, knieën licht gebogen.",
+      "motion": "wall",
+      "tags": []
     },
     {
       "id": "zijwaartse-armheffing",
@@ -859,7 +911,9 @@
       ],
       "support_needed": "Geen",
       "equipment": "Geen (eventueel boodschappentas of waterfles voor zwaarder)",
-      "media_placeholder": "Rustige illustratie van een oudere persoon staand die gestrekte armen zijwaarts tot schouderhoogte heft, schouders laag, ontspannen houding."
+      "media_placeholder": "Rustige illustratie van een oudere persoon staand die gestrekte armen zijwaarts tot schouderhoogte heft, schouders laag, ontspannen houding.",
+      "motion": "arm",
+      "tags": []
     },
     {
       "id": "ademhaling-houding-reset",
@@ -896,7 +950,9 @@
       ],
       "support_needed": "Geen; een stoel met rugleuning is prettig",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een 60+ persoon die rechtop zit met één hand op de buik, ontspannen gezicht, lange rug, sfeer van kalm ademhalen."
+      "media_placeholder": "Rustige illustratie van een 60+ persoon die rechtop zit met één hand op de buik, ontspannen gezicht, lange rug, sfeer van kalm ademhalen.",
+      "motion": "stand",
+      "tags": []
     },
     {
       "id": "bird-dog-aangepast",
@@ -934,7 +990,11 @@
       ],
       "support_needed": "Geen; matje of handdoek onder de knieën voor comfort",
       "equipment": "Matje of handdoek (optioneel)",
-      "media_placeholder": "Rustige illustratie van een 60+ persoon op handen en knieën op een matje, die één arm naar voren en het tegenovergestelde been naar achteren strekt in een rechte lijn (been niet hoger dan de heup), neutrale rug duidelijk zichtbaar."
+      "media_placeholder": "Rustige illustratie van een 60+ persoon op handen en knieën op een matje, die één arm naar voren en het tegenovergestelde been naar achteren strekt in een rechte lijn (been niet hoger dan de heup), neutrale rug duidelijk zichtbaar.",
+      "motion": "floor",
+      "tags": [
+        "grond-liggen"
+      ]
     },
     {
       "id": "tafel-plank",
@@ -972,7 +1032,9 @@
       ],
       "support_needed": "Stevige tafel of aanrecht dat niet kan wegschuiven",
       "equipment": "Stevige tafel of aanrecht",
-      "media_placeholder": "Rustige illustratie van een 60+ persoon die schuin op een stevig aanrecht leunt in een rechte lijn van hoofd tot hielen, ontspannen gezicht, neutrale rug duidelijk zichtbaar."
+      "media_placeholder": "Rustige illustratie van een 60+ persoon die schuin op een stevig aanrecht leunt in een rechte lijn van hoofd tot hielen, ontspannen gezicht, neutrale rug duidelijk zichtbaar.",
+      "motion": "wall",
+      "tags": []
     },
     {
       "id": "zittende-march",
@@ -1009,7 +1071,9 @@
       ],
       "support_needed": "Stevige stoel; leuningen handig als steun",
       "equipment": "Stevige stoel",
-      "media_placeholder": "Rustige illustratie van een 60+ persoon die rechtop op een stevige stoel zit en één knie optilt, lange rug, ontspannen schouders, andere voet plat op de grond."
+      "media_placeholder": "Rustige illustratie van een 60+ persoon die rechtop op een stevige stoel zit en één knie optilt, lange rug, ontspannen schouders, andere voet plat op de grond.",
+      "motion": "seated",
+      "tags": []
     },
     {
       "id": "boodschappentas-carry",
@@ -1047,7 +1111,9 @@
       ],
       "support_needed": "Stevige stoel of aanrecht binnen handbereik",
       "equipment": "Boodschappentas of stevige tas met wat gewicht (bijvoorbeeld pakken rijst of flessen water)",
-      "media_placeholder": "Rustige illustratie van iemand die rechtop met een tas in elke hand door de keuken loopt, aanrecht zichtbaar binnen handbereik als steun."
+      "media_placeholder": "Rustige illustratie van iemand die rechtop met een tas in elke hand door de keuken loopt, aanrecht zichtbaar binnen handbereik als steun.",
+      "motion": "carry",
+      "tags": []
     },
     {
       "id": "functioneel-bukken-en-reiken",
@@ -1085,7 +1151,11 @@
       ],
       "support_needed": "Stevige stoel of aanrecht binnen handbereik",
       "equipment": "Geen (eventueel een lichte tas voor extra weerstand)",
-      "media_placeholder": "Rustige illustratie zij-aanzicht van iemand die met een rechte rug vanuit de heupen voorover buigt, 1 hand licht op het aanrecht, ruggengraat duidelijk lang en neutraal."
+      "media_placeholder": "Rustige illustratie zij-aanzicht van iemand die met een rechte rug vanuit de heupen voorover buigt, 1 hand licht op het aanrecht, ruggengraat duidelijk lang en neutraal.",
+      "motion": "hinge",
+      "tags": [
+        "diep-bukken"
+      ]
     },
     {
       "id": "iets-op-schap-hoogte-wegzetten",
@@ -1123,7 +1193,9 @@
       ],
       "support_needed": "Aanrecht of stevige stoel binnen handbereik",
       "equipment": "Een licht voorwerp (bijvoorbeeld een pak, een opgevouwen handdoek of een lege doos)",
-      "media_placeholder": "Rustige illustratie van iemand die met platte voeten en rechte houding een licht pak op een keukenplank zet, aanrecht binnen handbereik als steun."
+      "media_placeholder": "Rustige illustratie van iemand die met platte voeten en rechte houding een licht pak op een keukenplank zet, aanrecht binnen handbereik als steun.",
+      "motion": "arm",
+      "tags": []
     },
     {
       "id": "iets-veilig-van-de-grond-tillen",
@@ -1161,7 +1233,11 @@
       ],
       "support_needed": "Stevige stoel of aanrecht binnen handbereik",
       "equipment": "Een licht tot middelzwaar voorwerp (bijvoorbeeld een lichte doos, mand of boodschappentas)",
-      "media_placeholder": "Rustige illustratie van iemand die met gebogen knieen en rechte rug een mand dicht bij het lichaam van de grond tilt, aanrecht naast hem als steun."
+      "media_placeholder": "Rustige illustratie van iemand die met gebogen knieen en rechte rug een mand dicht bij het lichaam van de grond tilt, aanrecht naast hem als steun.",
+      "motion": "sit-to-stand",
+      "tags": [
+        "diep-bukken"
+      ]
     },
     {
       "id": "enkels-losdraaien-en-pompen",
@@ -1198,7 +1274,9 @@
       ],
       "support_needed": "Stevige stoel (staande variant: aanrecht of stevige stoel als steun)",
       "equipment": "Stevige stoel (staande variant: aanrecht of stevige stoel)",
-      "media_placeholder": "Rustige illustratie van een oudere persoon op een stevige stoel die een voet optilt en de enkel rondjes laat draaien; ontspannen houding."
+      "media_placeholder": "Rustige illustratie van een oudere persoon op een stevige stoel die een voet optilt en de enkel rondjes laat draaien; ontspannen houding.",
+      "motion": "seated",
+      "tags": []
     },
     {
       "id": "knie-heffen-hoog",
@@ -1235,7 +1313,9 @@
       ],
       "support_needed": "Stevige stoel of aanrecht",
       "equipment": "Stevige stoel of aanrecht",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die staand een knie naar heuphoogte tilt, een hand op het aanrecht; steun duidelijk zichtbaar."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die staand een knie naar heuphoogte tilt, een hand op het aanrecht; steun duidelijk zichtbaar.",
+      "motion": "balance",
+      "tags": []
     },
     {
       "id": "nek-rustig-draaien",
@@ -1272,7 +1352,9 @@
       ],
       "support_needed": "Geen",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die zittend het hoofd langzaam naar de zijkant draait; nadruk op kalme, gecontroleerde beweging."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die zittend het hoofd langzaam naar de zijkant draait; nadruk op kalme, gecontroleerde beweging.",
+      "motion": "stand",
+      "tags": []
     },
     {
       "id": "schouderrollen",
@@ -1309,7 +1391,9 @@
       ],
       "support_needed": "Geen",
       "equipment": "Geen",
-      "media_placeholder": "Rustige illustratie van een oudere persoon, zittend en rechtop, die schouders in een vloeiende cirkel naar achteren rolt; ontspannen gezicht."
+      "media_placeholder": "Rustige illustratie van een oudere persoon, zittend en rechtop, die schouders in een vloeiende cirkel naar achteren rolt; ontspannen gezicht.",
+      "motion": "arm",
+      "tags": []
     },
     {
       "id": "zittende-rompdraai",
@@ -1347,7 +1431,9 @@
       ],
       "support_needed": "Stevige stoel",
       "equipment": "Stevige stoel",
-      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop op een stevige stoel zit en het bovenlichaam kalm naar de zijkant draait; rechte rug zichtbaar."
+      "media_placeholder": "Rustige illustratie van een oudere persoon die rechtop op een stevige stoel zit en het bovenlichaam kalm naar de zijkant draait; rechte rug zichtbaar.",
+      "motion": "seated",
+      "tags": []
     }
   ]
 }
