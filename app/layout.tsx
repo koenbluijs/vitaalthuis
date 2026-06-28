@@ -9,7 +9,13 @@ export const metadata: Metadata = {
     "Een eenvoudige dagelijkse beweegapp voor 50-plussers. Blijf thuis sterk, soepel en in balans in 5 tot 10 minuten per dag.",
   manifest: "/manifest.webmanifest",
   applicationName: "Vitaal Thuis",
-  icons: { icon: "/icon.svg", apple: "/icon.svg" },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   appleWebApp: { capable: true, title: "Vitaal Thuis", statusBarStyle: "default" },
 };
 

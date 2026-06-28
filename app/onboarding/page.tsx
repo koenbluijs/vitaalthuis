@@ -19,6 +19,7 @@ import {
   type OnboardingAnswers,
 } from "@/lib/onboarding";
 import { LEVELS } from "@/lib/levels";
+import { track } from "@/lib/analytics";
 import type { Level } from "@/lib/types";
 
 type Step = 0 | 1 | 2 | 3 | 4 | 5 | 6;
@@ -63,6 +64,8 @@ export default function OnboardingPage() {
       habitAnchor: anchor && anchor !== "een eigen moment" ? anchor : "",
       reminderEnabled: reminder,
     });
+    void track("level_selected", { level });
+    void track("onboarding_completed", { level, ageBand: a.ageBand, focus: a.focus });
     router.replace("/vandaag");
   }
 

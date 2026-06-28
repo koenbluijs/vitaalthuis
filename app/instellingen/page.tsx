@@ -15,6 +15,7 @@ import type { Level } from "@/lib/types";
 import { isSupabaseConfigured } from "@/lib/supabase";
 import { useSyncStore } from "@/lib/syncStore";
 import { saveWithEmail, signInWithEmail, signOut } from "@/lib/sync";
+import { track } from "@/lib/analytics";
 
 export default function SettingsPage() {
   const hydrated = useHydrated();
@@ -27,6 +28,53 @@ export default function SettingsPage() {
   const resetAll = useApp((s) => s.resetAll);
 
   const [confirmReset, setConfirmReset] = useState(false);
+
+  function setReminder(on: boolean) {
+    updateSettings({ reminderEnabled: on });
+    if (on) {
+      void track("reminder_set", {
+        time: settings.reminderTime,
+        anchor: settings.habitAnchor,
+      });
+      if (typeof Notification !== "undefined" && Notification.permission === "default") {
+        Notification.requestPermission().catch(() => {});
+      }
+    }
+  }
+
+  function addToCalendar() {
+    const pad = (n: number) => String(n).padStart(2, "0");
+    const [hh, mm] = (settings.reminderTime || "08:30").split(":");
+    const d = new Date();
+    const dt = `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}T${pad(Number(hh))}${pad(Number(mm))}00`;
+    const anchor = settings.habitAnchor ? ` (${settings.habitAnchor})` : "";
+    const ics = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//Vitaal Thuis//NL",
+      "CALSCALE:GREGORIAN",
+      "BEGIN:VEVENT",
+      `UID:vitaalthuis-${dt}@vitaalthuis`,
+      `DTSTART:${dt}`,
+      "RRULE:FREQ=DAILY",
+      `SUMMARY:Vitaal Thuis - je momentje${anchor}`,
+      "DESCRIPTION:Tijd voor een paar rustige oefeningen. Rustig aan.",
+      "BEGIN:VALARM",
+      "TRIGGER:PT0M",
+      "ACTION:DISPLAY",
+      "DESCRIPTION:Vitaal Thuis",
+      "END:VALARM",
+      "END:VEVENT",
+      "END:VCALENDAR",
+    ].join("\r\n");
+    const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "vitaal-thuis-herinnering.ics";
+    a.click();
+    URL.revokeObjectURL(url);
+    void track("calendar_added", { time: settings.reminderTime });
+  }
 
   useEffect(() => {
     if (hydrated && !onboarded) router.replace("/");
@@ -121,7 +169,7 @@ export default function SettingsPage() {
             label="Rustige herinnering"
             hint="Eén vriendelijke tik op je gekozen moment."
             checked={settings.reminderEnabled}
-            onChange={(v) => updateSettings({ reminderEnabled: v })}
+            onChange={setReminder}
           />
           {settings.reminderEnabled && (
             <div className="mt-3">
@@ -132,9 +180,12 @@ export default function SettingsPage() {
                 onChange={(e) => updateSettings({ reminderTime: e.target.value })}
                 className="rounded-xl border-2 border-border-strong bg-surface min-h-[52px] px-4 text-[1.05rem] focus-visible:outline focus-visible:outline-3"
               />
+              <Button variant="secondary" full className="mt-3" onClick={addToCalendar}>
+                Zet dagelijkse herinnering in mijn agenda
+              </Button>
               <p className="text-text-muted text-[0.9rem] mt-2">
-                In deze versie staat je voorkeur lokaal klaar. Pushberichten komen in een
-                latere versie.
+                De agenda-herinnering werkt op elke telefoon. Heb je de app op je beginscherm
+                gezet en meldingen toegestaan, dan kan de app je ook in de app herinneren.
               </p>
             </div>
           )}

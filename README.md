@@ -76,7 +76,8 @@ JSON-snapshot per gebruiker gesynct (last-write-wins) naar de tabel `app_state`.
 Aanzetten (op Vercel):
 
 1. **SQL draaien** — voer `supabase/schema.sql` uit in de Supabase SQL Editor, plus
-   `supabase/app_state.sql` (de tabel die de sync gebruikt, met RLS).
+   `supabase/app_state.sql` (de tabel die de sync gebruikt) en `supabase/events.sql`
+   (lichte, privacyvriendelijke analytics). Beide met RLS.
 2. **Anonieme login aanzetten** — Supabase Dashboard → Authentication → Sign In / Providers →
    *Allow anonymous sign-ins* inschakelen. (E-mail staat standaard aan.)
 3. **Redirect-URL** — zet je Vercel-domein bij Authentication → URL Configuration

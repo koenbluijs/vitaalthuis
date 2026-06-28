@@ -1,7 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import { useApp, useHydrated } from "@/lib/store";
 import { badgeById } from "@/lib/badges";
+import { track } from "@/lib/analytics";
 import { COPY } from "@/lib/copy";
 
 // Rustige, NIET-blokkerende melding onderaan: onderbreekt de sessie niet.
@@ -10,6 +12,11 @@ export function BadgeToast() {
   const hydrated = useHydrated();
   const justUnlocked = useApp((s) => s.progress.justUnlocked);
   const clear = useApp((s) => s.clearJustUnlocked);
+
+  const badge0 = justUnlocked[0];
+  useEffect(() => {
+    if (badge0) void track("badge_unlocked", { id: badge0 });
+  }, [badge0]);
 
   if (!hydrated || justUnlocked.length === 0) return null;
   const badge = badgeById(justUnlocked[0]);

@@ -156,3 +156,18 @@ create policy "app_state self insert" on app_state
   for insert with check (auth.uid() = user_id);
 create policy "app_state self update" on app_state
   for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+-- ── Analytics events (optioneel, privacyvriendelijk) ───────────────────────
+create table if not exists events (
+  id         bigserial primary key,
+  user_id    uuid references auth.users (id) on delete cascade,
+  event      text not null,
+  props      jsonb not null default '{}',
+  created_at timestamptz not null default now()
+);
+create index if not exists events_event_idx on events (event);
+create index if not exists events_created_idx on events (created_at);
+alter table events enable row level security;
+drop policy if exists "events self insert" on events;
+create policy "events self insert" on events
+  for insert with check (auth.uid() = user_id);

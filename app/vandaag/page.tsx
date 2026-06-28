@@ -12,11 +12,13 @@ import {
   dateStr,
 } from "@/lib/progress";
 import { formatMinutes } from "@/lib/levels";
+import { track } from "@/lib/analytics";
 import { COPY } from "@/lib/copy";
 import { SAFETY } from "@/lib/safety";
 import { Screen } from "@/components/Screen";
 import { Button, ButtonLink, Card, Pill } from "@/components/ui";
 import { SafetyAlert } from "@/components/SafetyAlert";
+import { InstallHint } from "@/components/InstallHint";
 import { cn } from "@/lib/cn";
 
 export default function TodayPage() {
@@ -71,18 +73,27 @@ export default function TodayPage() {
   const firstUndone = exercises.findIndex((e) => !doneIds.has(e.id));
   const allDone = exercises.length > 0 && firstUndone === -1;
 
+  function trackStart() {
+    if (progress.sessions.length === 0) void track("first_session_started", { day: day!.day });
+    else void track("session_started", { day: day!.day });
+    if (showWelcomeBack) void track("missed_day_returned", { day: day!.day });
+  }
+
   function startSession() {
+    trackStart();
     startDay(day!.day);
     router.push("/vandaag/sessie");
   }
 
   function openExercise(i: number) {
+    trackStart();
     startDay(day!.day);
     router.push(`/vandaag/sessie?i=${i}`);
   }
 
   return (
     <Screen>
+      <InstallHint />
       <header className="mb-5">
         <p className="text-text-muted">{COPY.dayStart.greeting}</p>
         <h1 className="text-[1.8rem] font-bold leading-tight">
@@ -129,7 +140,13 @@ export default function TodayPage() {
           <h2 className="text-[1.3rem] font-bold mb-1">{COPY.rest.title}</h2>
           <p className="text-text-muted mb-4">{COPY.rest.body}</p>
           <div className="space-y-3">
-            <Button full onClick={() => confirmRest(day.day)}>
+            <Button
+              full
+              onClick={() => {
+                void track("rest_confirmed", { day: day.day });
+                confirmRest(day.day);
+              }}
+            >
               {COPY.rest.confirm}
             </Button>
             {exercises.length > 0 && (
