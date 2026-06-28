@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useApp } from "@/lib/store";
 import { BottomNav } from "./BottomNav";
 import { BadgeToast } from "./BadgeToast";
+import { SyncProvider } from "./SyncProvider";
 
 const APP_ROUTES = ["/vandaag", "/oefeningen", "/voortgang", "/instellingen"];
 
@@ -58,6 +59,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <div className={showNav ? "pb-28" : ""}>{children}</div>
       {showNav && <BottomNav />}
       <BadgeToast />
+      <SyncProvider />
     </>
   );
 }

@@ -53,6 +53,7 @@ interface AppState {
   confirmRest: (day: number) => void;
   clearJustUnlocked: () => void;
   resetAll: () => void;
+  replaceState: (snap: { profile: Profile; settings: Settings; progress: Progress }) => void;
 }
 
 const initialProfile: Profile = {
@@ -238,6 +239,13 @@ export const useApp = create<AppState>()(
           profile: initialProfile,
           settings: initialSettings,
           progress: initialProgress,
+        })),
+
+      replaceState: (snap) =>
+        set(() => ({
+          profile: { ...initialProfile, ...snap.profile },
+          settings: { ...initialSettings, ...snap.settings },
+          progress: { ...initialProgress, ...snap.progress },
         })),
     }),
     {

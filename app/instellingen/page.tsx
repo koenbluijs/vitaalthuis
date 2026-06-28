@@ -12,6 +12,9 @@ import { Button, Card, PageHeader } from "@/components/ui";
 import { SafetyAlert } from "@/components/SafetyAlert";
 import { cn } from "@/lib/cn";
 import type { Level } from "@/lib/types";
+import { isSupabaseConfigured } from "@/lib/supabase";
+import { useSyncStore } from "@/lib/syncStore";
+import { saveWithEmail, signInWithEmail, signOut } from "@/lib/sync";
 
 export default function SettingsPage() {
   const hydrated = useHydrated();
@@ -138,6 +141,8 @@ export default function SettingsPage() {
         </div>
       </Section>
 
+      <SyncSection />
+
       <Section title="Veiligheid">
         <SafetyAlert variant="info">{SAFETY.disclaimerShort}</SafetyAlert>
         <Button
@@ -240,5 +245,85 @@ function ToggleRow({
         className="w-7 h-7 accent-[var(--color-primary)]"
       />
     </label>
+  );
+}
+
+function SyncSection() {
+  const status = useSyncStore((s) => s.status);
+  const email = useSyncStore((s) => s.email);
+  const [input, setInput] = useState("");
+  const [message, setMessage] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  const configured = isSupabaseConfigured();
+
+  async function save() {
+    if (!input.includes("@")) {
+      setMessage("Vul een geldig e-mailadres in.");
+      return;
+    }
+    setBusy(true);
+    const res = await saveWithEmail(input.trim(), window.location.origin);
+    setBusy(false);
+    setMessage(res.message);
+  }
+
+  async function login() {
+    if (!input.includes("@")) {
+      setMessage("Vul een geldig e-mailadres in.");
+      return;
+    }
+    setBusy(true);
+    const res = await signInWithEmail(input.trim(), window.location.origin);
+    setBusy(false);
+    setMessage(res.message);
+  }
+
+  return (
+    <Section title="Je voortgang bewaren">
+      {!configured ? (
+        <p className="text-text-muted">
+          Cloud-back-up is in deze omgeving niet ingesteld. Je voortgang blijft gewoon op
+          dit apparaat bewaard.
+        </p>
+      ) : status === "gekoppeld" ? (
+        <div className="space-y-3">
+          <SafetyAlert variant="info">
+            Je voortgang is gekoppeld aan <strong>{email}</strong> en wordt automatisch
+            bewaard. Je kunt op een ander apparaat met deze e-mail verder.
+          </SafetyAlert>
+          <Button variant="secondary" full onClick={() => void signOut()}>
+            Uitloggen op dit apparaat
+          </Button>
+        </div>
+      ) : (
+        <div className="space-y-3">
+          <p className="text-text-muted">
+            Je voortgang wordt automatisch in de cloud bewaard. Koppel een e-mail als je
+            op een ander apparaat verder wilt — er is geen wachtwoord nodig.
+          </p>
+          <input
+            type="email"
+            inputMode="email"
+            autoComplete="email"
+            placeholder="jouw@email.nl"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            className="w-full rounded-xl border-2 border-border-strong bg-surface min-h-[56px] px-4 text-[1.05rem] focus-visible:outline focus-visible:outline-3"
+          />
+          <Button full disabled={busy} onClick={save}>
+            Bewaar mijn voortgang
+          </Button>
+          <Button variant="tertiary" full disabled={busy} onClick={login}>
+            Ik heb dit al → stuur me een inloglink
+          </Button>
+          {message && (
+            <p className="rounded-xl bg-success-surface text-on-success-surface p-3">
+              {message}
+            </p>
+          )}
+        </div>
+      )}
+    </Section>
   );
 }

@@ -60,11 +60,33 @@ docs/                Fase 1 t/m 6: onderzoek, concept, structuur, stijlgids, oef
 ## Data & opslag
 
 De MVP slaat alles **lokaal** op (Zustand + `localStorage`, key `vitaal-thuis-v1`).
-De domeinstructuur komt 1-op-1 overeen met `supabase/schema.sql`, zodat accounts en
-sync later toegevoegd kunnen worden zonder het datamodel te wijzigen. Oefeningen en het
-30-dagen programma zijn los van elkaar opgeslagen, zodat content aanpasbaar is zonder de
-programmaruggengraat te raken. Pas content aan via de JSON in `content/` (en draai
-`python3 scripts/build-program.py` als je het programma opnieuw wilt opbouwen).
+Oefeningen en het 30-dagen programma zijn los van elkaar opgeslagen, zodat content
+aanpasbaar is zonder de programmaruggengraat te raken. Pas content aan via de JSON in
+`content/` (en draai `python3 scripts/build-program.py` als je het programma opnieuw
+wilt opbouwen).
+
+## Cloud-sync (Supabase, optioneel)
+
+De app blijft **altijd local-first**. Als de Supabase-keys aanwezig zijn, komt er een
+optionele cloud-laag bij: de gebruiker wordt **anoniem** ingelogd zodat de voortgang
+automatisch in de cloud wordt bewaard, en kan later een **e-mail koppelen** (magic link,
+geen wachtwoord) om op een ander apparaat verder te gaan. De hele app-state wordt als één
+JSON-snapshot per gebruiker gesynct (last-write-wins) naar de tabel `app_state`.
+
+Aanzetten (op Vercel):
+
+1. **SQL draaien** — voer `supabase/schema.sql` uit in de Supabase SQL Editor, plus
+   `supabase/app_state.sql` (de tabel die de sync gebruikt, met RLS).
+2. **Anonieme login aanzetten** — Supabase Dashboard → Authentication → Sign In / Providers →
+   *Allow anonymous sign-ins* inschakelen. (E-mail staat standaard aan.)
+3. **Redirect-URL** — zet je Vercel-domein bij Authentication → URL Configuration
+   (Site URL + Redirect URLs), zodat de e-mail-inloglinks werken.
+4. **Env vars** — zorg dat `NEXT_PUBLIC_SUPABASE_URL` en `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   in je Vercel-project staan (zie `.env.example`). Zonder deze waarden draait de app
+   gewoon zonder cloud-sync.
+
+Zonder keys (bv. lokaal) is alles uitgeschakeld en toont Instellingen "niet ingesteld" —
+de app werkt dan volledig lokaal verder.
 
 ## Testen
 
